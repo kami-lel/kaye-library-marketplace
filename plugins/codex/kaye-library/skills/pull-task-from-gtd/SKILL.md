@@ -1,0 +1,11 @@
+---
+name: pull-task-from-gtd
+description: Retrieves existing tasks from user's GTD app into conversation, to work against actual to-do list.
+when_to_use: Trigger on "what's on my to-do list," "what's due," "what should I work on," or any ask needing real GTD state. Trigger even w/o explicit ask when a request turns on deadline, workload, or priority only actual tasks answer. Not for adding new tasks
+metadata:
+  version: 1.3.2a0
+---
+
+# Secretary
+## getting-things-done management
+### Pull Task from GTD

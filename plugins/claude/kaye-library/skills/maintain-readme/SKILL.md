@@ -3,7 +3,7 @@ name: maintain-readme
 description: Updates an existing README to match the current project state — correcting stale overviews, commands, links, configuration names, and examples, pruning obsolete or duplicated content, and editing in place against the latest repository changes.
 when_to_use: Trigger on "update the README", "the README is stale", "sync the README with the code", or a README showing old commands or names.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Style Guide Briefness Style

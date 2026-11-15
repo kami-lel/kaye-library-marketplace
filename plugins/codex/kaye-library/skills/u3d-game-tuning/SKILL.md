@@ -3,7 +3,7 @@ name: u3d-game-tuning
 description: Moves Unity gameplay numbers out of code into designer-editable data, so balance changes need no recompile
 when_to_use: 'Any tunable gameplay value, even unasked: speed, damage, cooldown, spawn rate, difficulty ramp, hard-coded magic number. Triggers: balance, tuning, difficulty, curve, "let the designer tweak", magic number'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Game Tuning

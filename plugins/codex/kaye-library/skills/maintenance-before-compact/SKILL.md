@@ -3,7 +3,7 @@ name: maintenance-before-compact
 description: Logs a session's durable changes before context compaction — recording them in `CHANGELOG.md` and syncing `AGENTS.md` and `CONTEXT.md` — identifying the change set once from the conversation, working diffs, and existing `[Unreleased]` entries.
 when_to_use: Trigger on "before compact", "context is about to compact", "save this session's progress", or "log the session's changes before the context fills".
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Style Guide Good Writing

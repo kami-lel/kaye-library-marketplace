@@ -3,7 +3,7 @@ name: halt-each-movement
 description: Stops after 1 Movement, waits for user to open next Turn
 when_to_use: Trigger on "halt after each Movement", "one Movement at a time", "stop after every step", or "let me review between Movements".
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Movement and Suite

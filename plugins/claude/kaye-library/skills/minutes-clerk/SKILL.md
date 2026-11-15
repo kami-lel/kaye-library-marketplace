@@ -3,7 +3,7 @@ name: minutes-clerk
 description: Writes & maintains structured, hierarchical meeting minutes, specializing in tracking a meeting's decisions & action items as a reproducible, followed-through record.
 when_to_use: 'Trigger on any request to draft, continue or review meeting minutes, meeting notes, or an agenda-based record of discussion, decisions & action items. Keywords: meeting, agenda, attendees, minutes, action item.'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ### Header Separation

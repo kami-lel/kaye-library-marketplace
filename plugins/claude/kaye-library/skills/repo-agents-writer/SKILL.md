@@ -3,7 +3,7 @@ name: repo-agents-writer
 description: 'Writes & maintains repository `AGENTS.md` & personal `AGENTS.local.md`: **prescriptive** rules telling AI coding agents how to work in repo, e.g. commands, code style, PR rules, safety constraints'
 when_to_use: 'Creating, updating, reviewing `AGENTS.md`, `AGENTS.local.md`, `CLAUDE.md`, similar agent-instruction files. Triggers: "write an AGENTS.md", "add agent instructions", "agent rules/conventions". Not for **descriptive** architecture/domain knowledge, which belongs in `CONTEXT.md`'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 paths:
 - '**/{AGENTS,Agents,agents}{,.local,.override}{,.md}'
 ---

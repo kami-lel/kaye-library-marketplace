@@ -3,7 +3,7 @@ name: commit-sense-branch-merging
 description: 'Writes the message of a merge in progress: a typed first line prepended to Git''s own message.'
 when_to_use: 'Trigger mid-merge, before the merge commit: "write the merge message", "message for this merge", "land the feature message", or any request to word a pending merge commit.'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 # Style Guide

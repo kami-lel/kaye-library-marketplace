@@ -3,7 +3,7 @@ name: create-repo-docs
 description: Creates topic-focused `docs/` files for a repository
 when_to_use: 'Triggers: "write docs", "document this", "add API/setup docs", undocumented command/API'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Style Guide Good Writing

@@ -3,7 +3,7 @@ name: recap-today
 description: 'Recaps what user has finished today so far as one warm, encouraging Recap Line: events attended, mail answered, tasks closed, gathered from record & reported to cheer the user toward doing more.'
 when_to_use: Trigger on "what have I done today," "recap today so far," a mid-day or end-of-day check on today's progress, or any ask for today's finished work. Not for yesterday's record, nor Good Morning's full inbox-plus-event check-in.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Style Guide Briefness Style

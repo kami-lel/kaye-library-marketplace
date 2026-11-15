@@ -3,7 +3,7 @@ name: u3d-naming
 description: Names anything in a Unity project, code identifier or asset, so related things sort together & each name reads at a glance
 when_to_use: 'Naming or renaming anything in a Unity project, even unasked: new class, field, prefab, material, sprite, animation clip, folder. Triggers: "what to call this", rename, naming convention, variant, numbered asset'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Unity Naming

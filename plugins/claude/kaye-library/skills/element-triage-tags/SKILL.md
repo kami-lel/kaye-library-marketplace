@@ -3,7 +3,7 @@ name: element-triage-tags
 description: Defines triage tags (TT) — defect/note labels spanning code and docs across 3 case tiers (Loud/Steady/Quiet), with per-tag meanings and raise/lower tier shifts
 when_to_use: When adding, classifying, or raising/lowering BUG/FIXME/TODO/HACK markers in any case, or resolving what a TT tier signifies. Not for fixing the defects the tags point to
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Triage Tags

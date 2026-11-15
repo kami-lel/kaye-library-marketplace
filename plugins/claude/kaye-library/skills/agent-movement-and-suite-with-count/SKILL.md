@@ -3,7 +3,7 @@ name: agent-movement-and-suite-with-count
 description: Defines the **Movement** and its inner **Count** — reviewable division of large work, atomic action measuring progress — with naming, sizing, boundaries, and `a\b🧩c\d` prefix
 when_to_use: When work is split into Movements or Counts, or either is announced, numbered, tallied, or sized — "break this up", "step by step", "how far along", or progress given as a fraction. Also whenever "phase", "stage", "task", or "part" would name a division of work
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Movement and Suite

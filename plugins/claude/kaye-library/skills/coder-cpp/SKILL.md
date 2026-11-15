@@ -3,7 +3,7 @@ name: coder-cpp
 description: Writes, edits, and reviews C++ code under a fixed house style.
 when_to_use: Use for any C++ code work, requests for C++.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 paths:
 - '**/*.{cpp,cc,cxx,hpp,hh,hxx}'
 ---

@@ -3,7 +3,7 @@ name: coder-python
 description: 'writes, edits, reviews Python code: scripts, modules, packages, functions, classes, inline snippets'
 when_to_use: trigger for any Python task — `.py` files, code blocks, writing/fixing/refactoring/optimizing/reviewing Python, or bare code requests with no language stated in a Python context. Not for docstring-only or test-only requests, route those to the dedicated skills
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 paths:
 - '**/*.py'
 ---

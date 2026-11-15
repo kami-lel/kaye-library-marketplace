@@ -3,7 +3,7 @@ name: element-dt-month-day-format
 description: Formats a date carrying no year, day of week prefix optional
 when_to_use: 'Any output date stated without a year: anniversaries, birthdays, recurring schedules, near-term plans, entries inside the current year'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Date and Time Format

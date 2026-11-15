@@ -3,7 +3,7 @@ name: repo-readme-writer
 description: Writes and maintains human-friendly README files — scannable, visually clear landing pages covering a project's purpose, features, setup, usage, and contribution flow, linking every reference document inline within the explanation that names it, with a standard title format and tasteful use of headings, lists, badges, and emoji.
 when_to_use: 'Use when creating, updating, or reviewing a README or similar project landing page. Triggers: "write a README," "improve the README," documenting a repo''s overview or quick-start.'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 paths:
 - '**/{README,Readme,readme}{,.md,.txt}'
 ---

@@ -3,7 +3,7 @@ name: write-llm-prompt
 description: Drafts and improves LLM system-message prompts, advises on prompt engineering, and preserves source syntax like JSON schema.
 when_to_use: When a user wants a system prompt written, rewritten, graded, or grammar-checked — "write a prompt," "improve my prompt." Not for general prose or copy.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 # Meta Prompt

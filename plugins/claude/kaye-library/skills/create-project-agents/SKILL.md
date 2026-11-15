@@ -3,7 +3,7 @@ name: create-project-agents
 description: Creates `AGENTS.md` for a generic project that has none
 when_to_use: 'Triggers: "write an AGENTS.md for this project", "add agent instructions", "set up agent rules"'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## agents writer

@@ -3,7 +3,7 @@ name: style-markdown-footnotes
 description: Attaches a Markdown footnote to each link, keeping the footnote's definition directly beside its reference.
 when_to_use: When a link needs an inline note kept close to the text, not batched at the document's end.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ### Markdown Footnotes

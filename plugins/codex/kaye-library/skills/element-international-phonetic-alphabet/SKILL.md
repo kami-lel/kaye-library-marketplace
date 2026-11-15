@@ -3,7 +3,7 @@ name: element-international-phonetic-alphabet
 description: Provides accurate IPA transcription in /slash notation/ inline after any word requiring pronunciation clarity, across all languages.
 when_to_use: Trigger on any pronunciation question, foreign word, name, or phonetically ambiguous term — even unprompted. Never use square brackets.
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## International Phonetic Alphabet

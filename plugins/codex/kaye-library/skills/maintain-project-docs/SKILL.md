@@ -3,7 +3,7 @@ name: maintain-project-docs
 description: Updates existing project `docs/` files against what changed, editing in place
 when_to_use: 'Triggers: "update the docs", "the docs are out of date", changed decision, tool, or process'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 ---
 
 ## Style Guide Good Writing

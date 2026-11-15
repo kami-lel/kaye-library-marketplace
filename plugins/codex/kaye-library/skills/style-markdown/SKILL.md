@@ -3,7 +3,7 @@ name: style-markdown
 description: 'Formats in GitHub Flavored Markdown: bold for key info, italics for titles/secondary info, no underscores'
 when_to_use: 'Any Markdown reply or file: bold and italic emphasis, headings, lists, tables, or "format this as Markdown".'
 metadata:
-  version: 1.3.2a0
+  version: 1.4.0
 user-invocable: false
 ---
 

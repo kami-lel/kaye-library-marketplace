@@ -3,7 +3,7 @@ name: coder-python-testing-guidelines
 description: writes, reviews Python `pytest` test code per project conventions
 when_to_use: trigger on `test_*.py`/`*_test.py` files, pytest, fixtures, mocks, parametrize, assertions, or requests like write/add/fix a unit test or test case. Not for non-test Python code
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 paths:
 - '**/test_*.py'
 - '**/*_test.py'

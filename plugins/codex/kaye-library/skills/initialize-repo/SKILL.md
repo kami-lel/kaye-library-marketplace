@@ -3,7 +3,7 @@ name: initialize-repo
 description: Bootstraps a repository's entire baseline documentation set in one pass — `README.md`, `CHANGELOG.md`, `AGENTS.md`, `CONTEXT.md`, and `docs/` — from a single repository inspection, splitting content by purpose with no duplication and skipping files that already exist.
 when_to_use: When a bare repo needs its documentation scaffolded all at once — "set up docs," "set up this project/repo," "document this project," "create the docs from scratch." Not for updating or fixing existing docs.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Style Guide Good Writing

@@ -3,7 +3,7 @@ name: u3d-if
 description: Declares Unity Inspector fields so designers read, tune & rename them without breaking saved values
 when_to_use: 'Adding, renaming, or reviewing any value exposed in the Inspector, even when user only says "expose this" or "make it tweakable". Triggers: `[SerializeField]`, Inspector, public field, "show in editor", tooltip'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ### Inspector Field

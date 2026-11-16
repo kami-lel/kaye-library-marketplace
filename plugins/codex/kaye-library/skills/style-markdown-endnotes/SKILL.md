@@ -3,7 +3,7 @@ name: style-markdown-endnotes
 description: Attaches a footnote-style identifier link inline and collects every definition in an endnotes block at the file's end.
 when_to_use: When a link needs a compact inline marker with full references at the document's end.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ### Markdown Endnotes

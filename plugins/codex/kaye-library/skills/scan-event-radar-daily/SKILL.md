@@ -3,7 +3,7 @@ name: scan-event-radar-daily
 description: Scans the event radar for today and formats what it finds into one daily brief.
 when_to_use: Use for raw event lists needing parse & format.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Unreachable Task Workaround

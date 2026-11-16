@@ -3,7 +3,7 @@ name: bibliographer
 description: coordinates citation and bibliography assembly across the other Amanuensis skills
 when_to_use: Trigger when sources are being mentioned across a conversation and need tracking for citation, or on "track my sources" and "keep a source list".
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ### Markdown Footnotes

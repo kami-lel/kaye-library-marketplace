@@ -3,7 +3,7 @@ name: release-version
 description: 'Releases the project: runs every Ready for Version Release movement, merges the branch into `main` with a typed release message, and tags the merge with its `v` version.'
 when_to_use: 'Reach for this when a release should go out: "release 1.2.0," "cut a release and tag it," "merge to main and tag." Not for prepping the release alone (use the ready-release-version skill) or landing a feature branch (use the land-feature skill).'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Perform Version Release

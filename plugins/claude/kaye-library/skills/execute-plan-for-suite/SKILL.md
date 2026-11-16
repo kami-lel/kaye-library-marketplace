@@ -1,9 +1,9 @@
 ---
-name: plan-for-suite-execution
+name: execute-plan-for-suite
 description: Executes approved Plan file, 1 Movement per turn — Movement In, work, present with link back, Movement Out. Plan file doubles as saved state, so pause and resume carry across sessions
-when_to_use: On Plan file preface; on instruction to begin, continue, pause, or resume; on any *continue* shorthand. Also mid-run on bug, false assumption, wrong Movement, user redirect — halt and rework live here. Not for drafting Plans
+when_to_use: On Plan file preface; on instruction to begin, continue, pause, or resume; on any *continue* shorthand. Not for drafting Plans (`plan-for-suite`) or reworking them (`rework-plan-for-suite`)
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Movement and Suite
@@ -14,6 +14,14 @@ A **Suite** is a workflow for explicit, multi-round user tasks — not simple, i
 - number Movements from `1`, incrementing by 1 — `1`, `2`, `3`.
 ### {[git] Usage}
 A single Movement often corresponds to one git commit.
+### {[Claude:TodoWrite] Usage}
+One `TodoWrite` entry per Movement in the Suite — 1:1, never merged or split. Entry index gives Movement number `a`; array length gives total `b`.
+- `content`: prefix + Movement imperative
+- `activeForm`: prefix + present continuous
+Status flow: `pending` at Seed (before Movement 1 opens) → `in_progress` on Open → `completed` on Close, once Working state is verified.
+Rules:
+- exactly 1 entry `in_progress` at a time
+- Movement added or dropped mid-Suite: edit the array in the call that closes the current Movement, and rewrite every prefix to the new `b`
 ### Movement Notation
 ```
 🧩3\7 Rewrote the Entry Point
@@ -25,6 +33,52 @@ Aggressively use one of these 2 forms for every mention of a Movement in your re
 - `SUMMARY` short description of the Movement, in [Title Case](#letter-case-title-case)
 ----
 Except in a markdown heading: spell out `Movement a` instead, eg `## Movement 5`.
+#### {[Claude:TodoWrite] Usage}
+`TodoWrite` Examples, with prefix `🧩a\b SUMMARY`
+Seed:
+```json
+{
+  "todos": [
+    {
+      "content": "🧩1\\3 Rewrite the Entry Point",
+      "status": "pending",
+      "activeForm": "🧩1\\3 Rewriting the Entry Point"
+    },
+    {
+      "content": "🧩2\\3 Move the Parser to Its Own Module",
+      "status": "pending",
+      "activeForm": "🧩2\\3 Moving the Parser to Its Own Module"
+    },
+    {
+      "content": "🧩3\\3 Update the Test Fixtures",
+      "status": "pending",
+      "activeForm": "🧩3\\3 Updating the Test Fixtures"
+    }
+  ]
+}
+```
+Open Movement 2 — resend whole array, 1 status changes:
+```json
+{
+  "todos": [
+    {
+      "content": "🧩1\\3 Rewrite the Entry Point",
+      "status": "completed",
+      "activeForm": "🧩1\\3 Rewriting the Entry Point"
+    },
+    {
+      "content": "🧩2\\3 🥁 Move the Parser to Its Own Module",
+      "status": "in_progress",
+      "activeForm": "🧩2\\3 🥁 Moving the Parser to Its Own Module"
+    },
+    {
+      "content": "🧩3\\3 Update the Test Fixtures",
+      "status": "pending",
+      "activeForm": "🧩3\\3 Updating the Test Fixtures"
+    }
+  ]
+}
+```
 ### Plan for Suite: Bar 3: Execution
 Starts only after the user approves the Plan. Follow Plan order — nothing skipped, nothing combined.
 If not already answered, ask whether to run under `cascade-all-movements` or `halt-each-movement`.
@@ -39,7 +93,7 @@ Movement order binds your judgement, not the user's. Out of sequence, several at
 The Plan file doubles as the run's saved state, so a run survives the end of a session:
 - Normal Execution: leave the Plan file untouched, no Status update between Movements
 - Pause: only when the user explicitly states "pause", never on a halt; then set each Movement's Status keyword to where the run stands
-- Resume: read each Movement's Status, Movement In to the earliest not `Done` or `Dropped`; on a mismatch with the workspace, halt per [Reworking the Plan](#reworking-the-plan)
+- Resume: read each Movement's Status, Movement In to the earliest not `Done` or `Dropped`; on a mismatch with the workspace, halt per [Plan for Suite: Rework](#plan-for-suite-rework)
 Status keywords, written only on a pause or a rework. Each Movement carries exactly one keyword at any moment:
 - `Pending`: not entered yet, the starting keyword
 - `Done`: closed Working
@@ -49,18 +103,10 @@ Status keywords, written only on a pause or a rework. Each Movement carries exac
 For a user Movement, never do the work yourself. Guide interactively:
 1. Movement In: say the Movement is theirs and its goal
 2. give one step at a time; wait for their report before the next
-3. halt per [Reworking the Plan](#reworking-the-plan) if a report contradicts the Plan
+3. halt per [Plan for Suite: Rework](#plan-for-suite-rework) if a report contradicts the Plan
 4. settle the End State by their confirmation or your check, and say which
 5. Movement Out once it holds
 For another party, hand over steps and End State, await its report, then verify.
-##### Reworking the Plan
-Halt the moment reality stops matching the Plan — a bug, a false assumption, a wrong or unnecessary Movement, unaccounted-for work, a user redirect, anything unanticipated. Never work around it.
-1. present the finding: the Plan's assumption, the reality, and the cost to the Movements still ahead
-2. rewrite the Plan whole — edit it in place, or author an entirely new file — never a diff, excerpt, or the rework alone. Keep completed Movements untouched and numbered; revise, remove, or add the rest as the finding demands
-3. set every Movement's Status keyword per [Bar 2: Write the Plan](#bar-2-write-the-plan), so the file reads cold as exactly how far the run got and what the finding cost
-4. never renumber to make room. A split Movement keeps its number and gains sub-Movements beneath it — `Movement 1` becomes `Movement 1.1` and `Movement 1.2`
-5. present the revised Plan and hold for approval, as in [Bar 2: Write the Plan](#bar-2-write-the-plan)
-6. once approved, Movement In to the earliest unfinished Movement, and not sooner
 #### Movement Recap
 Always end the Turn with a 2-line [Turn Progress Dispatch](#turn-progress-dispatch), each line prefixed per [Movement Notation](#movement-notation):
 ```
@@ -69,6 +115,18 @@ Always end the Turn with a 2-line [Turn Progress Dispatch](#turn-progress-dispat
 ```
 Except when the entire Plan is completed — then end with a 1-line Turn Progress Dispatch naming the Plan instead:
 ```
+🏁 Auth Refactor
+```
+#### {[Claude:Skill] Usage}
+Invoke the skill chosen for this run — `cascade-all-movements` or `halt-each-movement` — via `Skill` tool.
+For each Movement's git commit, invoke `commit-sense` via `Skill` tool.
+When halting for [Plan for Suite: Rework](#plan-for-suite-rework), invoke `rework-plan-for-suite` via `Skill` tool.
+#### {[Claude:AskUserQuestion] Usage}
+use `AskUserQuestion` tool to confirm each step or the End State of a user Movement, carrying likely replies as options
+#### {[Claude:PushNotification] Usage}
+Call `PushNotification` when the entire Suite is completed.
+Write 1 line: emoji + Suite name
+```text
 🏁 Auth Refactor
 ```
 #### {[git] Usage}

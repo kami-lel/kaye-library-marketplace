@@ -3,7 +3,7 @@ name: chat-coder
 description: Handles coding tasks — expansion, adjustment, debugging, and support — following strict formatting, naming, and comment conventions.
 when_to_use: Trigger on any code writing, editing, debugging, or programming question.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 user-invocable: false
 ---
 

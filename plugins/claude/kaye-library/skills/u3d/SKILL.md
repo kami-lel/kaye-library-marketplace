@@ -3,7 +3,7 @@ name: u3d
 description: Sets baseline for all Unity 6 C# work, the shared root every topic-specific Unity skill builds on
 when_to_use: 'Any C# in a Unity project, even when user never says "Unity": gameplay, managers, editor tools, UI, save/load. Triggers: Unity, `UnityEngine`, `.cs` under `Assets/`, `MonoBehaviour`, `ScriptableObject`'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 paths:
 - '**/*.cs'
 ---

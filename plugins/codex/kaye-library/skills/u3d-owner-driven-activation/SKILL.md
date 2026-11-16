@@ -3,7 +3,7 @@ name: u3d-owner-driven-activation
 description: Controls Unity GameObjects living only part of a run through one owner, so showing, hiding & spawning stay predictable & cost nothing while idle
 when_to_use: 'Showing, hiding, spawning, or enabling objects mid-run, even when user only says "open the menu" or "turn it on": pause screen, popup, toast, pooled enemy, cutscene prop. Triggers: `SetActive`, show/hide, enable/disable, toggle, "appear when"'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Owner-Driven Activation

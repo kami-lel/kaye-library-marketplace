@@ -3,7 +3,7 @@ name: condense-changelog
 description: 'Condenses `CHANGELOG.md`''s `[Unreleased]` section for release: rewords its entries into concise, high-level changelog style and adds Admonitions for Breaks and Hazards where warranted.'
 when_to_use: Trigger on "condense the changelog", "tidy the Unreleased section", "reword the changelog for release", or "add Breaks and Hazards".
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Style Guide Briefness Style

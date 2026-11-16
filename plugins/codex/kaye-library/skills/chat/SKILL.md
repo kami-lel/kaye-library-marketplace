@@ -3,7 +3,7 @@ name: chat
 description: 'Sets how you conduct a turn-based conversation: reply language, discourse terms, decorative emojis, and how a question is marked'
 when_to_use: Applies to every conversation turn, even when the user gives no formatting or style instruction
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 # Agentic

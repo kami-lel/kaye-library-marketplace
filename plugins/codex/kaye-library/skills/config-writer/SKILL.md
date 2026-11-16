@@ -3,7 +3,7 @@ name: config-writer
 description: Writes & maintains structured, hierarchical personal notes, specializing in capturing an app's, game's or system's preferences, settings & config state as a reproducible snapshot.
 when_to_use: 'Trigger on any request to record, update or review a settings, preferences, keybind or config snapshot for an app, game or OS. Keywords: settings, preferences, config, keybind, build/version.'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ### Header Separation

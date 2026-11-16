@@ -3,7 +3,7 @@ name: submit-pr
 description: Opens a pull request landing a feature branch on `dev`, after readying its docs, with the title and body drawn from the branch summary.
 when_to_use: Trigger on "open a PR", "create a pull request", "submit this feature", "land this on dev", or `gh pr create`. Not for syncing docs alone before a merge (use `ready-land-feature`) or wording a merge commit (use `commit-sense-branch-merging`).
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 # Style Guide

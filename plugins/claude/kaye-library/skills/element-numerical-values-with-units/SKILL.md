@@ -3,7 +3,7 @@ name: element-numerical-values-with-units
 description: Presents numerical values in both metric and US units with correct unit abbreviations and space-separated thousands.
 when_to_use: 'Any answer carrying physical quantities: distances, masses, temperatures, speeds, volumes, or "how far", "how heavy", "convert to km".'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Numerical Values with Units

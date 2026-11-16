@@ -3,7 +3,7 @@ name: create-repo-agents
 description: Creates `AGENTS.md` for a repository that has none
 when_to_use: 'Triggers: "write an AGENTS.md", "add agent instructions", "make an agents file"'
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## agents writer

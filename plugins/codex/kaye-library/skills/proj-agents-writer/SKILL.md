@@ -3,7 +3,7 @@ name: proj-agents-writer
 description: 'Writes & maintains `AGENTS.md` for generic AI-ready projects: rules & constraints telling agents how to work on project'
 when_to_use: Creating, updating, reviewing `AGENTS.md` for generic project
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## agents writer

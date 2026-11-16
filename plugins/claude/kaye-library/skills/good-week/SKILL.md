@@ -3,7 +3,7 @@ name: good-week
 description: Runs the user's weekly look ahead, events and job opportunities alike, closing with a single report.
 when_to_use: Trigger on "good week," a weekly or start-of-week check-in request, or an ask for what is coming up this week.
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Good Week

@@ -3,7 +3,7 @@ name: agent-movement-and-suite
 description: Defines the **Suite** and its **Movement** divisions — a multi-round workflow and the reviewable units it's broken into
 when_to_use: When a task is broken into Movements, or a Suite or Movement is announced, numbered, or presented — including "break this up", "step by step", "next step"
 metadata:
-  version: 1.4.0
+  version: 1.4.1
 ---
 
 ## Movement and Suite

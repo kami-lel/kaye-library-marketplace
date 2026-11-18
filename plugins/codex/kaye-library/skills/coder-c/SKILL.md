@@ -3,7 +3,7 @@ name: coder-c
 description: 'Writes, edits, and reviews C code under a fixed house style: C99 and brace placement.'
 when_to_use: Use for any C code work, requests for C.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 paths:
 - '**/*.{c,h}'
 ---

@@ -3,7 +3,7 @@ name: sync-unit-test
 description: Reconciles a failing test suite with a codebase's changed behavior — realigning stale assertions, fixtures, and baselines to the new contract, and surfacing the failures where the code, not the test, may be what drifted.
 when_to_use: Trigger when tests fail after a refactor, API change, or redesign — "tests broke after my change," "sync the tests," "re-baseline snapshots." Not for writing a suite for untested code.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Movement and Suite

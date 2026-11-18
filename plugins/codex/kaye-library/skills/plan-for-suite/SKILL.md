@@ -3,7 +3,7 @@ name: plan-for-suite
 description: Splits oversized task into ordered, numbered Movements, then runs them under review — survey repository, write Plan file, hold for approval, execute 1 Movement per turn
 when_to_use: 'On large, multi-file, multi-concern work wanted reviewable, not 1 pass. Triggers: plan this, break into Movements, go step by step. Start before any edit, so survey precedes Plan, Plan precedes 1st change. Not for 1-turn tasks'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Movement and Suite
@@ -63,6 +63,12 @@ The user is a party too, by their own name, eg `{John}`.
 ```
 ### {[git] Usage}
 Never index or commit the [Plan File](#plan-file), unless the user explicitly asks: it is run scratch, not project history.
+----
+Parallel execution is an option, never a requirement: independent Movements may run at once, each in its own linked worktree and feature branch per `tend-linked-wt`.
+- where a large task splits cleanly, favor disjoint Scopes and few dependencies
+- mark each parallel Movement with its peers and its branch
+- stay sequential when splitting costs more than it saves, eg shared files, tight coupling
+- a Movement depending on parallel ones waits until all their branches merge back
 ### Plan for Suite: Bar 3: Execution
 Starts only after the user approves the Plan. Follow Plan order — nothing skipped, nothing combined.
 If not already answered, ask whether to run under `cascade-all-movements` or `halt-each-movement`.

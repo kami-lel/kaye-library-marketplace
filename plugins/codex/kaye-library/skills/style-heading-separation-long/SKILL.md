@@ -3,7 +3,7 @@ name: style-heading-separation-long
 description: Sets wide blank-line spacing before Markdown headers, for long files
 when_to_use: Long, many-section Markdown documents needing generous separation between sections
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Style Guide

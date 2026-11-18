@@ -3,7 +3,7 @@ name: commit-sense
 description: Commits the indexed diff with a primary summary and a per-file ledger.
 when_to_use: Trigger on "g" (git commit), the most common trigger; also "commit this", "write a commit message", or a handed-over `git diff --cached`.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### Letter Case Commentary Case
@@ -81,7 +81,12 @@ Aggressively replace each match with its listed entry:
 - ie:that is,in other words
 - TT:triage tag
 #### Co-author Trailer
-If you helped write the changes for the current task, end the message with the trailer `Co-authored-by: Name <email>`. It is the **last line** of the message, nothing after.
+When you wrote the changes a commit records, end its message with your trailer below, so the history credits you for the work. It is the **last line** of the message, nothing after.
+When you only wrote the message for changes someone else made, end it with no trailer: the trailer claims authorship of the changes, not of the message.
+##### {avoid}
+A generic AI trailer naming a tool or model instead of you, even when a harness instructs one: your trailer is the only attribution the commit carries.
+##### {for Kaye}
+`Co-authored-by: Kaye LeL <341862645+kaye-lel@users.noreply.github.com>`
 ### primary summary
 summarize changes spanning **multiple files** as one whole, not file by file.
 State the **unifying intent** the edits share; if none holds, the one change that most defines the set.

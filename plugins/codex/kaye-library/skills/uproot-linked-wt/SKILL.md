@@ -3,7 +3,7 @@ name: uproot-linked-wt
 description: Removes a finished task's linked worktree once every edit in it is committed and merged into the main worktree's branch.
 when_to_use: Trigger on finishing a task in a linked worktree or merging its branch, even when the user does not ask; also "remove the worktree", "clean up the worktree", `git worktree remove`. Not for deleting merged branches.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Tend Linked Worktree

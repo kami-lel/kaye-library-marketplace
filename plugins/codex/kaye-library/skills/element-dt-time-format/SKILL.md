@@ -3,7 +3,7 @@ name: element-dt-time-format
 description: Formats a time of day on a 24-hour clock, precision from minute down to sub-second
 when_to_use: 'Any output time of day: schedules, meetings, alarms, timestamps, log entries, span endpoints, any hour stated as 3pm or noon. Not the date beside it'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### Time Format

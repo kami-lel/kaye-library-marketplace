@@ -3,7 +3,7 @@ name: amanuensis-chicago-bibliography
 description: 'Generates Chicago Manual of Style bibliography entries: source-template citation lines and annotated entries for a Works Cited or reference list'
 when_to_use: 'Trigger on "add to bibliography", "list sources", "format as CMS bibliography", "Bibliography" requests, or annotated-bibliography requests. Boundary: bibliography-list entries only, not inline footnote markers'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Amanuensis

@@ -3,7 +3,7 @@ name: hunt-job-opportunity
 description: Gathers job opportunity information from any available source and formats it into briefs, one per job, each with a title-and-company heading, key details, and a briefness-style overview.
 when_to_use: Trigger on "job hunt," "find me a job," "what job opportunities are there," or any ask to gather and present job openings, including openings already mentioned in this conversation. Not for revising a single job posting or listing calendar events.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Unreachable Task Workaround

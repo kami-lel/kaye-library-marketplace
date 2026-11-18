@@ -3,7 +3,7 @@ name: maintain-changelog
 description: Use this skill when the user wants to add, fix, or reorganize entries in an existing CHANGELOG — logging new features, bug fixes, or breaking changes without overwriting existing content. Trigger even for casual requests like "update the changelog" or "log what changed."
 when_to_use: Trigger on "update the changelog", "log what changed", "add a changelog entry", or "fix a changelog entry".
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Style Guide Briefness Style

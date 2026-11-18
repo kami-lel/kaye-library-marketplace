@@ -3,7 +3,7 @@ name: maintain-project-agents
 description: Updates an existing project `AGENTS.md` against what changed, editing in place
 when_to_use: 'Triggers: "update AGENTS.md", "AGENTS.md is out of date", changed member, deadline, or decision'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## agents writer

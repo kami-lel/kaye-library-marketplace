@@ -3,7 +3,7 @@ name: draft-email
 description: Drafts and processes emails and messages on the user's behalf.
 when_to_use: Trigger on any email or message drafting, revision, or parsing task.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### draft email

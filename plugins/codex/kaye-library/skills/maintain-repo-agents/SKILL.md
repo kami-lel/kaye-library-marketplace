@@ -3,7 +3,7 @@ name: maintain-repo-agents
 description: Updates an existing repository `AGENTS.md` against what changed, editing in place
 when_to_use: 'Triggers: "update AGENTS.md", "CLAUDE.md still says the old path", changed build/test command or convention'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## agents writer

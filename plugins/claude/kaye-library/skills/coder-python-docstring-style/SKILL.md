@@ -3,7 +3,7 @@ name: coder-python-docstring-style
 description: writes, formats Python docstrings in Sphinx/reStructuredText
 when_to_use: trigger whenever a Python function, method, class, or module is written or edited — docstrings are near-mandatory, so add or update one by default, not just on explicit request. Also trigger on docstring, Sphinx, reST, `:param:`, `:return:`, `:raises:`, `:type:` mentions
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 paths:
 - '**/*.py'
 ---

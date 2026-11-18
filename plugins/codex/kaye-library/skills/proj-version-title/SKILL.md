@@ -3,7 +3,7 @@ name: proj-version-title
 description: 'Writes a version release title from new vs. old version: bump word, release type, version.'
 when_to_use: 'Naming a version release: "title this release", "what do I call 1.0.0", Prototype, Pre-Alpha, Alpha, Beta, Release Candidate, or Stable label, major/minor/patch bump word. Not for choosing the version number itself'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Projects

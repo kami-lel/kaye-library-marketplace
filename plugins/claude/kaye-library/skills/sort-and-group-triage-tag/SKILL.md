@@ -3,7 +3,7 @@ name: sort-and-group-triage-tag
 description: Reorders existing triage tags into grouped blocks — tier from Loud to Quiet, then meaning from bug to fixme, todo, hack. Position only, nothing else changes.
 when_to_use: Reach for this on "sort the triage tags," "group them by tier," "put the loud ones together," or after a sweep appends new tags to a block. Not for writing a tag or fixing what one marks.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### Sort and Group Triage Tag

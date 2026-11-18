@@ -3,7 +3,7 @@ name: cascade-all-movements
 description: Runs all remaining Movements in 1 Turn, stops only when the Suite is done or the user must step in
 when_to_use: Trigger on "run all Movements", "cascade", "keep going until the Suite is done", or "finish the whole Plan in one Turn".
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Movement and Suite

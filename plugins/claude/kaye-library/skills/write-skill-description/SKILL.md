@@ -3,7 +3,7 @@ name: write-skill-description
 description: 'Writes a skill''s `description` field: a self-contained statement of what the skill does, leading with the main verb and outcome.'
 when_to_use: When a user wants a skill's `description` field written, drafted, or reviewed on its own, not its `when_to_use` or other metadata.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Meta Prompt

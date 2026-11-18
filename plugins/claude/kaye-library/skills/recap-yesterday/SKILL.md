@@ -3,7 +3,7 @@ name: recap-yesterday
 description: 'Recaps what user finished yesterday as one warm, encouraging Recap Line: events attended, mail answered, tasks closed, gathered from record & reported to cheer the user toward doing more.'
 when_to_use: Trigger on "what did I do yesterday," a recap, review, or standup-note request covering the day before, or any ask for yesterday's finished work. Not for planning ahead, nor today's progress.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Style Guide Briefness Style

@@ -3,7 +3,7 @@ name: element-dt-watch-week
 description: Defines the Watch Week, a forward planning range of days closing on a terminal Sunday
 when_to_use: 'Any horizon covering the days ahead: weekly reviews, task ranges, plans and deadlines stated as this week'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### Watch Week

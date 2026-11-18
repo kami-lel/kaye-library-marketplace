@@ -3,7 +3,7 @@ name: repo-changelog-writer
 description: Writes and maintains CHANGELOG files per Keep a Changelog conventions — dated version entries newest-first, grouped change types, a persistent `[Unreleased]` section, and linkable version references.
 when_to_use: 'Use when creating, updating, or adding entries to a CHANGELOG, or recording changes for a release. Triggers: "update the changelog," "log this change," "document the release."'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 paths:
 - '**/{CHANGELOG,Changelog,changelog}{,.md,.txt}'
 ---

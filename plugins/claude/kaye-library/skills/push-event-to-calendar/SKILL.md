@@ -3,7 +3,7 @@ name: push-event-to-calendar
 description: Adds an event to the user's outside calendar app or service, from a single supplied event or from an event list already organized in the conversation.
 when_to_use: Trigger on "add this to my calendar," "put these events on my calendar," "schedule this," or once an event list has been assembled in conversation and needs to land on the calendar. Trigger even w/o explicit ask whenever a firm, dated event surfaces in conversation that the user would plausibly want on the calendar. Not for pulling or checking existing calendar events
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Secretary

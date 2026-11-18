@@ -3,7 +3,7 @@ name: resolve-merge-conflict
 description: Resolves conflicts in a halted Git merge — reconciles both sides of every hunk into correct working-tree files, markers removed.
 when_to_use: Triggers on a halted merge, rebase, cherry-pick, or pull; `<<<<<<<`/`=======`/`>>>>>>>` markers; or phrases like "resolve the conflicts," "fix the merge," "merge --continue is blocked." Not for branch strategy or merge commit messages.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Resolve Merge Conflict

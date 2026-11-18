@@ -3,7 +3,7 @@ name: style-letter-case-pascal-case
 description: 'Names the Pascal Case convention: each word capitalized, no separators.'
 when_to_use: 'Requests naming or converting to Pascal case: "PascalCase", "capitalize every word, no spaces", or a name like `TotalPrice`.'
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Style Guide

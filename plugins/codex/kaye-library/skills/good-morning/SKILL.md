@@ -3,7 +3,7 @@ name: good-morning
 description: Runs the user's daily morning check in one pass, closing with a single combined report.
 when_to_use: Trigger on "good morning," a daily or morning check-in request, or an ask to catch up on daily admin and housekeeping. Not for a single one-off task or an ad-hoc lookup.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ## Good Morning

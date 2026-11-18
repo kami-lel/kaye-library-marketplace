@@ -3,7 +3,7 @@ name: style-markdown-extended
 description: Formats dash-bulleted lists in commentary case, with optional Title-Case colon labels (bold sparingly, never italic); renders math in LaTeX (inline `$…$`, block `$$…$$`); renders diagrams/flowcharts in Mermaid code blocks
 when_to_use: Any list, equation, or diagram in a response — bullet points, term/definition pairs, key-value labels, formulas, or flowchart/graph requests. Not for numbered/ordered lists, prose, or non-Mermaid diagram formats
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Style Guide

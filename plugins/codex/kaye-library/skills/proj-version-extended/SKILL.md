@@ -3,7 +3,7 @@ name: proj-version-extended
 description: Extends semantic versioning with conventions for `alpha`/`beta`/`rc` pre-release numbering, OS/date build-metadata tags, and version-to-dev-stage mapping (toy, vertical slice, pre-alpha, alpha, beta, rc, stable)
 when_to_use: Choosing or validating a version string for a pre-release, tagged build, or dev-stage milestone. Not for the base `major.minor.patch` core format or general changelog entries
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Projects

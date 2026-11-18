@@ -3,7 +3,7 @@ name: keybinding-writer
 description: Records an app's, game's or system's keybindings as a reproducible note in compact key symbols.
 when_to_use: Trigger on recording, updating or reviewing keybindings, shortcuts, hotkeys, keymaps. Broader settings snapshots → Config Writer.
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 ### Header Separation

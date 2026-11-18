@@ -3,7 +3,7 @@ name: pull-event-from-calendar
 description: Retrieves existing events from the user's outside calendar app or service into the conversation, so the conversation can work against the user's actual schedule.
 when_to_use: Trigger on "what's on my calendar," "check my schedule," "am I free," or any task needing the user's real calendar state. Trigger even w/o explicit ask whenever a request turns on a date, time, or conflict the conversation cannot answer without the user's actual calendar. Not for adding or scheduling new events
 metadata:
-  version: 1.4.1
+  version: 1.5.0
 ---
 
 # Secretary

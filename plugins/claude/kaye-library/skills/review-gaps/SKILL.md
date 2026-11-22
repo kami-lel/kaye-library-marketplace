@@ -3,7 +3,7 @@ name: review-gaps
 description: Audits whole repository for gaps, drift, unfinished seams — anything that becomes user-visible bug on public release; marks every surviving gap with a Loud TT.
 when_to_use: 'Pre-release audit requests: "gap review," "ready to ship?," "what''s missing," "review project state." Not single-diff or single-file review.'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Triage Tags

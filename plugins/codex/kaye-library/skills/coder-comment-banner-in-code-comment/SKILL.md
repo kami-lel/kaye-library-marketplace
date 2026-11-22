@@ -3,7 +3,7 @@ name: coder-comment-banner-in-code-comment
 description: writes comment banners inside source code — ranked heading-plus-ruler separators marking file titles, top-level sections, and nested subsections behind each language's comment leader
 when_to_use: 'Any long source file needing structural markers: section dividers, boxed file-title blocks, or banner comments. Trigger on "CB0"–"CB5", "banner", "section header comment", "ruler", and whenever authored code runs long enough that navigation suffers — even without an explicit ask. Not for terminal or logging output.'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Comment Banner

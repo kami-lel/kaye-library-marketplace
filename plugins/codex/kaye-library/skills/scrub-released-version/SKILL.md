@@ -3,7 +3,7 @@ name: scrub-released-version
 description: 'Scrubs up after a version release: reports the release, then, each on approval, pushes `main` and its `v` tag, prunes merged branches, fast-forwards `dev` to `main`, and bumps `dev` to the next patch alpha.'
 when_to_use: 'Reach for this once a release is merged into `main` and tagged: "push the release," "clean up after the release," "sync dev with main," "open the next alpha on dev." Not for cutting the release itself (use the release-version skill) or pruning branches alone (use the prune-merged-branches skill).'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Projects

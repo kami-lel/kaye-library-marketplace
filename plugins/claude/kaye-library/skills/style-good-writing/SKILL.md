@@ -3,7 +3,7 @@ name: style-good-writing
 description: Proofreads and polishes text with minimal edits — fixing spelling, grammar, punctuation, and clarity while preserving the original meaning, voice, and wording.
 when_to_use: Use to proofread, copyedit, or correct writing without rewriting. Not for heavy rewrites, summarizing, or tone changes.
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Style Guide Good Writing

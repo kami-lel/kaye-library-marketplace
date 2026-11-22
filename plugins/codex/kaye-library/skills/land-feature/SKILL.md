@@ -3,7 +3,7 @@ name: land-feature
 description: 'Lands a feature branch on `dev`: runs every Ready for Feature Landing movement, merges the branch into `dev` with a typed Feature Landing message, then runs Scrub After Feature Landing.'
 when_to_use: 'Reach for this when a finished feature branch should be merged: "land this feature," "merge this into dev," "finish and merge." Not for prepping docs alone (use the ready-land-feature skill) or releasing a version.'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Perform Feature Landing

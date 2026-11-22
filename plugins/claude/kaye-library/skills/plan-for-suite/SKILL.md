@@ -3,7 +3,7 @@ name: plan-for-suite
 description: Splits oversized task into ordered, numbered Movements, then runs them under review — survey repository, write Plan file, hold for approval, execute 1 Movement per turn
 when_to_use: 'On large, multi-file, multi-concern work wanted reviewable, not 1 pass. Triggers: plan this, break into Movements, go step by step. Start before any edit, so survey precedes Plan, Plan precedes 1st change. Not for 1-turn tasks'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Movement and Suite

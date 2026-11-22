@@ -3,7 +3,7 @@ name: rework-plan-for-suite
 description: 'Reworks running Plan file when reality stops matching it: halts, rewrites Plan, holds for approval before work resumes'
 when_to_use: 'Mid-run on bug, false assumption, wrong or unnecessary Movement, unaccounted-for work, user redirect, workspace mismatch on resume — even unprompted. Triggers: rework the Plan, replan, Plan no longer fits. Not for drafting Plans (`plan-for-suite`) or running Movements (`execute-plan-for-suite`)'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Movement and Suite

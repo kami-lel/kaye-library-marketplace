@@ -3,7 +3,7 @@ name: repo-credits-writer
 description: 'Writes and maintains `CREDITS.md`: third-party assets and libraries, credited in per-kind tables naming each asset''s path, source, author, and license, plus optional contributors and acknowledgments.'
 when_to_use: 'Use when creating, updating, or reviewing a CREDITS file or attribution list. Triggers: "credit this asset," "add attribution," "which licenses do we ship," adding a third-party sprite, model, font, sound, or library. Not for the project''s own license file.'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 paths:
 - '**/{CREDITS,Credits,credits}{,.md,.txt}'
 ---

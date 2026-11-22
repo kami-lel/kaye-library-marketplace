@@ -3,7 +3,7 @@ name: coder-bash-shell
 description: answers Bash command requests for Debian GNU/Linux with the bare terminal line
 when_to_use: 'fires when the user wants something run now, not a file kept: "give me a command", "one-liner", ad hoc `grep`, `sed`, `awk`, `find`, `apt`, `systemctl`. Hands off to Coder Bash Script once the deliverable is a `.sh` file, function, or sourced library'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Bash

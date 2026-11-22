@@ -3,7 +3,7 @@ name: create-changelog
 description: Bootstraps a `CHANGELOG.md` for a repo that has none — reconstructing dated, versioned sections from git history newest-first, with an `[Unreleased]` block and version links.
 when_to_use: Trigger on "create a changelog", "start a CHANGELOG", "rebuild the changelog from git history", or a repository with no `CHANGELOG.md`.
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Style Guide Briefness Style

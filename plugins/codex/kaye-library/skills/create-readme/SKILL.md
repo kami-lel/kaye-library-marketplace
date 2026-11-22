@@ -3,7 +3,7 @@ name: create-readme
 description: Use this skill when the user wants to create a new `README.md` from scratch — covering project overview, setup, usage, configuration, and contributing guidelines. Trigger even for casual requests like "write a readme" or "document this project."
 when_to_use: Trigger on "write a README", "create a README", "this repo has no README", or a new project needing a landing page.
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Style Guide Briefness Style

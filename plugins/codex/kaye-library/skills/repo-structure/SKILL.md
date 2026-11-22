@@ -3,7 +3,7 @@ name: repo-structure
 description: Defines a standard, language-agnostic project/repository layout — naming conventions and placement for top-level documentation files and source, build, docs, test, and tooling folders.
 when_to_use: 'Use when scaffolding a new repo, organizing an existing one, or deciding where a file or folder belongs. Triggers: "set up project structure," "where should this go," naming a standard doc or directory.'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Repository Structure

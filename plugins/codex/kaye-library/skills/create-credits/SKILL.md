@@ -3,7 +3,7 @@ name: create-credits
 description: Bootstraps a `CREDITS.md` for a repository that has none, inventorying every third-party asset, font, sound, and bundled library it ships, with each one's source, author, and license.
 when_to_use: Trigger on "create a credits file", "credit our assets", "list the third-party assets", or a repository shipping third-party material with no `CREDITS.md`.
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Style Guide Briefness Style

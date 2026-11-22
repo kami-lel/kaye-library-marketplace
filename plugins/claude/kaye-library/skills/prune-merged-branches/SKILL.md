@@ -3,7 +3,7 @@ name: prune-merged-branches
 description: Deletes local branches already merged into the current branch, with a report of what went and what stayed.
 when_to_use: Trigger on "clean up branches," "prune merged branches," or "delete old/stale branches."
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Prune Merged Branches

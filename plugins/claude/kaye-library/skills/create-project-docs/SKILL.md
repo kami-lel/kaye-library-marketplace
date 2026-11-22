@@ -3,7 +3,7 @@ name: create-project-docs
 description: Creates topic-focused `docs/` files for a generic project
 when_to_use: 'Triggers: "write docs", "document this project", "add a doc for this topic"'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Style Guide Good Writing

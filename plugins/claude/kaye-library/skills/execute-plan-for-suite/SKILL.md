@@ -3,7 +3,7 @@ name: execute-plan-for-suite
 description: Executes approved Plan file, 1 Movement per turn — Movement In, work, present with link back, Movement Out. Plan file doubles as saved state, so pause and resume carry across sessions
 when_to_use: On Plan file preface; on instruction to begin, continue, pause, or resume; on any *continue* shorthand. Not for drafting Plans (`plan-for-suite`) or reworking them (`rework-plan-for-suite`)
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Movement and Suite

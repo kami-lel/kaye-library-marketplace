@@ -3,7 +3,7 @@ name: u3d-assets-management
 description: Places Unity assets & folders across `Assets/`, so any file is found by asset type, domain & module without search
 when_to_use: 'Creating, moving, importing any Unity asset, even when user never mentions folder: new script file, scene, prefab, audio clip, texture, animation. Triggers: "where does this go", folder layout, project structure, `Assets/`, import, organize'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Assets Management

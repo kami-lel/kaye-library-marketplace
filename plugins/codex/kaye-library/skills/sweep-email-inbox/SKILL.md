@@ -3,7 +3,7 @@ name: sweep-email-inbox
 description: 'Sweeps an email inbox: reads every unread message, marks it read, sorts it into a category'
 when_to_use: 'Triage, sweep, sort, clear inbox: "go through my unread mail," "categorize my inbox," "mark everything read." Trigger even w/o explicit ask when user wants unread mail handled. Not for composing, replying, searching single messages'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## Date and Time Format

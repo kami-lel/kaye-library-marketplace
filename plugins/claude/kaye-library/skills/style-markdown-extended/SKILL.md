@@ -3,14 +3,14 @@ name: style-markdown-extended
 description: Formats dash-bulleted lists in commentary case, with optional Title-Case colon labels (bold sparingly, never italic); renders math in LaTeX (inline `$…$`, block `$$…$$`); renders diagrams/flowcharts in Mermaid code blocks
 when_to_use: Any list, equation, or diagram in a response — bullet points, term/definition pairs, key-value labels, formulas, or flowchart/graph requests. Not for numbered/ordered lists, prose, or non-Mermaid diagram formats
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Style Guide
 ## Style Guide Markdown Format
 Please style your responses using *Github Flavored Markdown*. Avoid mentioning markdown or styling in your response.
 Follow these guidelines in every conversation:
-- Use **double asterisks** (`**`) for **bold** text when highlighting important information
+- Use **double asterisks** (`**`) for **bold** text on **key words**: the term a passage defines, the command or action to run, a warning, a decision, a result. In prose and documents, bold generously: a reader skimming only the bold should recover the gist
 - Employ *single asterisks* (`*`) for *italics* to reference titles of books, movies, games, and secondary important information
 - do not use underscores (`_`) for bold/italics formatting.
 ### Extended Markdown Format
@@ -26,13 +26,13 @@ Use `-` (dash) for bullet point lists
 Item rules:
 - Case: write each item in [Commentary Case](#letter-case-commentary-case)
 - Label: when an item defines a term or pairs a key with a description, lead with a [*Title Case*](#letter-case-title-case) label and a colon, no space before, one after; the description follows in Commentary Case
-- Emphasis: leave labels plain; bold one or two per list at most, only where the item must not be missed, since bolding all of them dilutes the signal; never italicize a label; use backticks only for identifiers, flags, paths, and literals
+- Emphasis: leave labels plain; bold 1~2 key words inside each item's description; bold a label only where the item must not be missed; never italicize a label; use backticks only for identifiers, flags, paths, and literals
 - Consistency: label every item or none
 - Numbering: number a list only when order is intrinsic, such as algorithm steps, frames, or setup procedures; categories stay dash-bulleted
 - Nesting: carry a composite item as one parent label with indented sub-bullets, never as flattened sibling lines
 <labeled-list-example>
-- First Label: plain, the default
-- **Second Label**: bolded because it must not be missed
+- First Label: plain label, the **key words** of the description bolded
+- **Second Label**: bolded because it must not be missed, with a **second key word** in the description
 - `--third-flag`: backticks for an identifier, not for emphasis
 </labeled-list-example>
 In a table cell, aggressively replace the boolean/not-applicable value with its listed entry:

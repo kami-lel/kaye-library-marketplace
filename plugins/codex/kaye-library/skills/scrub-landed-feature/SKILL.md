@@ -3,7 +3,7 @@ name: scrub-landed-feature
 description: 'Scrubs up after a feature branch lands on `dev`: reports the landing, then, each on approval, pushes `dev`, uproots the branch''s linked worktree, and deletes the merged branch.'
 when_to_use: 'Reach for this once a feature branch is merged into `dev`: "clean up after the merge," "push dev and delete the branch," "scrub the landed feature." Not for merging the branch itself (use the land-feature skill) or pruning many merged branches at once (use the prune-merged-branches skill).'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Git

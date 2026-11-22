@@ -3,7 +3,7 @@ name: push-task-to-gtd
 description: Adds tasks to user's GTD app, each assigned a project & an Eisenhower quadrant, from 1 supplied task or a task list organized in conversation.
 when_to_use: Trigger on "add to my tasks," "put on my to-do list," "remind me to," or once a task list needs to land in GTD. Trigger even w/o explicit ask when a firm to-do surfaces that user would plausibly track. Not for pulling or checking existing tasks
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Secretary

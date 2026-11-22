@@ -3,7 +3,7 @@ name: style-letter-case-title-case
 description: 'Names the Title Case convention: major words capitalized, minor words lowercase.'
 when_to_use: for document titles and section headings
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Style Guide

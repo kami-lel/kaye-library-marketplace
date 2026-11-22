@@ -3,7 +3,7 @@ name: ready-land-feature
 description: Records a feature branch's changes into `CHANGELOG.md` and updates `AGENTS.md` and `CONTEXT.md` to match, syncing all affected docs in one pass before a merge, then commits the work.
 when_to_use: Reach for this when wrapping up or merging a feature branch — "prep for merge," "finish this feature," "document what I changed," "update docs before merging." Not for cutting a versioned release (use the release skill) or general doc edits unrelated to a branch.
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 # Git

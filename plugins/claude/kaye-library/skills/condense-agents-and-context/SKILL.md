@@ -3,7 +3,7 @@ name: condense-agents-and-context
 description: 'Shrinks an existing AGENTS and CONTEXT pair: reads both whole, drops finished plans, dead workflows, superseded detail, anything the code already answers, tightens the rest, adds nothing'
 when_to_use: 'Fires when the pair has outgrown its content: an `AGENTS.md` too long to keep in context, a "Planned" or "In Progress" or "Migration" section describing finished work, a directory tree the source now contradicts, one rule stated in both files. Also "AGENTS.md is 600 lines", "cut CLAUDE.md down", "why is CONTEXT.md so long". Apply unasked before a release or handoff. Not when new work needs recording'
 metadata:
-  version: 1.5.0
+  version: 1.5.1
 ---
 
 ## agents writer

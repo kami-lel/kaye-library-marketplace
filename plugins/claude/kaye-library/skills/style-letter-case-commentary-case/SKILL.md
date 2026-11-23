@@ -3,7 +3,7 @@ name: style-letter-case-commentary-case
 description: 'Names the Commentary Case convention: lowercase opening, standard capitalization after, no final punctuation.'
 when_to_use: for list items, table cell content, code comment
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 # Style Guide

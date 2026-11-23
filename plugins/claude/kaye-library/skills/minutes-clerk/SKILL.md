@@ -3,9 +3,19 @@ name: minutes-clerk
 description: Writes & maintains structured, hierarchical meeting minutes, specializing in tracking a meeting's decisions & action items as a reproducible, followed-through record.
 when_to_use: 'Trigger on any request to draft, continue or review meeting minutes, meeting notes, or an agenda-based record of discussion, decisions & action items. Keywords: meeting, agenda, attendees, minutes, action item.'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
+## Files & Folders
+Files are assumed to be consistent between rounds. If you detect any changes, treat them as intentional user edits and continue working from the current state of the file.
+----
+When no specific naming format is required — for documents, resources, media, and other non-code files:
+- respect a directory's existing naming convention for new entries within it
+- otherwise, for a new file or folder:
+  - Files: use [Kebab Case](#letter-case-kebab-case)
+  - Folders: use [Pascal Case](#letter-case-pascal-case)
+- if a file name must carry a date, the date leads it: `0YYYYMMDD` per [Date and Time Format](#date-and-time-format), then a hyphen, then the subject slug, eg `020260826-weekly-standup.md`. This sorts a directory chronologically on name alone
+# Style Guide
 ### Header Separation
 You must add *empty lines* before each section header, with the **number of empty lines determined by the header level** provided in the table.
 Note: Do not include the text inside parentheses `()`, these are *instructions* showing where to insert empty lines.
@@ -45,6 +55,11 @@ Note: Do not include the text inside parentheses `()`, these are *instructions* 
     #### Usage
     (...)
     </header-separation-medium-file-example>
+## Letter Case
+### Letter Case Kebab Case
+lowercase words joined by hyphens, eg: `total-price`
+### Letter Case Pascal Case
+each word capitalized, no separators, eg: `TotalPrice`
 ## Style Guide Good Writing
 - Correct spelling, grammar, punctuation, sentence structure, and verb tense errors.
 - Preserve the original meaning, voice, tone, style, word order, and vocabulary as much as possible unless the user requests heavier rewriting.
@@ -55,6 +70,19 @@ Note: Do not include the text inside parentheses `()`, these are *instructions* 
 - Do not add new information, remove intended information, or change the substantive meaning of the text.
 - Avoid generic filler when details are unavailable
 - Avoid dense prose, generic filler, and unnecessary complexity
+## Date and Time Format
+### Year Month Day Format
+Write `0YYYY-MM-DD`, the year padded to five digits. The day of week code prefix is optional.
+`H 02015-01-15`, `02015-01-15`, `A 01984-12-31`
+### (element-dt-days-of-week)
+Each code is one letter, unique per day, because English initials repeat (T and S each name 2 days); German fills the gaps. Day of week codes:
+- A:Monday (1st letter, 1st workday)
+- D:Tuesday (in Dienstag)
+- E:Wednesday
+- H:Thursday
+- R:Friday
+- S:Saturday
+- U:Sunday
 ## Dispositor
 you maintain structured, hierarchical notes taken from **source material** — the thing the note is a note *of*, whether a text, a screen, a sitting or a recording. The source material is the authority: the note's heading tree follows the source's own divisions, its wording follows the source's own wording, & every unbracketed line traces back to something the source actually held. 1 grammar governs filenames, framing, prose density & content arrangement, so any note in the corpus reads the same way regardless of which source material produced it.
 #### File Naming

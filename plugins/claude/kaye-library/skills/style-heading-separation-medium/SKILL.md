@@ -3,7 +3,7 @@ name: style-heading-separation-medium
 description: Sets moderate blank-line spacing before Markdown headers, for medium-length files
 when_to_use: Medium-length Markdown documents needing moderate separation between sections
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 # Style Guide

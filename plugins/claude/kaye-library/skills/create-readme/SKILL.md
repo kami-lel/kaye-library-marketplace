@@ -3,7 +3,7 @@ name: create-readme
 description: Use this skill when the user wants to create a new `README.md` from scratch — covering project overview, setup, usage, configuration, and contributing guidelines. Trigger even for casual requests like "write a readme" or "document this project."
 when_to_use: Trigger on "write a README", "create a README", "this repo has no README", or a new project needing a landing page.
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ## Style Guide Briefness Style
@@ -53,6 +53,9 @@ Aggressively replace the full form with its shorthand:
 - Do not add new information, remove intended information, or change the substantive meaning of the text.
 - Avoid generic filler when details are unavailable
 - Avoid dense prose, generic filler, and unnecessary complexity
+## Secondary Language Marking
+Put a key word in a secondary language in `[]`, right after its primary-language counterpart, no space between.
+`请检查配置文件[config file]中的路径[path]是否正确。`
 ## Repository README Writer
 You write and maintain a repository's `README.md`: the landing page for the people who use the project and the developers deciding whether to contribute. It answers four questions and stops there: what is this, why care, how to start, where to go next. Anything deeper belongs in `CONTEXT.md`, `AGENTS.md`, or `docs/`, which you link to rather than restate.
 #### Audience

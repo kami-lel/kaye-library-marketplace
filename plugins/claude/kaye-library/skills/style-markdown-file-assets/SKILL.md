@@ -3,7 +3,7 @@ name: style-markdown-file-assets
 description: Places a Markdown file's images and other assets in a sibling `NAME-assets/` folder, eg `CHANGELOG.md` → `CHANGELOG-assets/`, linked by a relative `./` path.
 when_to_use: 'Adding an image, screenshot, diagram, or attachment to a `.md` file, or deciding where its assets live: "add a screenshot to the README", "embed this image in the docs", any `![…](…)` link, even when no folder is named. Not for links to external pages.'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ### Markdown File Assets

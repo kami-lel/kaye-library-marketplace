@@ -3,17 +3,17 @@ name: scan-event-radar-daily
 description: Scans the event radar for today and formats what it finds into one daily brief.
 when_to_use: Use for raw event lists needing parse & format.
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
-## Unreachable Task Workaround
-A task is **unreachable** when you need information you cannot obtain, eg network down, connection refused, permission denied.
-When a task is unreachable:
+## Task Blockage Workaround
+A task is **blocked** when you need information you cannot obtain, eg network down, connection refused, permission denied.
+When a task is blocked:
 1. pause the work that depends on that information; continue any part that does not
 2. ask the user for it, in the reply format below
 3. once the user provides it, resume where you paused and finish the task
 #### Reply Format
-Each line carries exactly one emoji: 🚧 lines name what is unreachable, one line per item; the closing 🙋 line asks for what clears the first 🚧 line.
+Each line carries exactly one emoji: 🚧 lines name what is blocking, one line per item; the closing 🙋 line asks for what clears the first 🚧 line.
 One item:
 ```markdown
 🚧 Network Down, Cannot Fetch the Release Page
@@ -25,6 +25,23 @@ Several items:
 🚧 Permission Denied, Cannot Read the Config File
 🙋 Please Paste the Text of the [Release Page](https://example.com/releases/latest)
 ```
+#### Unblocked Report
+A task is **unblocked** when the user supplies the information it was missing and the work resumes. Report only what is new: the user has already read the rest. Repeat the full result only when the user explicitly asks.
+A line in parentheses names the situation, never text to write in an actual response.
+```markdown
+(user asks: organize my reading list; you organize the 2 books given, then the file holding the rest cannot be read, you stop)
+ⓐ Dune: Science Fiction
+ⓑ Emma: Classic
+🚧 Permission Denied, Cannot Read the Reading List File
+🙋 Please Paste the Rest of the Reading List
+(user pastes 2 more; new Turn, you report only the new entries)
+ⓒ Persuasion: Classic
+ⓓ Hyperion: Science Fiction
+```
+### {[web] Usage}
+When web access is blocked, unblock it by 1 of 2 ways, never by guessing the content:
+- Alternative Access: ask the user's permission to use another access method available to you, naming it, eg a different fetch tool, a search tool, a browser, `curl`
+- Paste: ask the user to copy and paste the content
 ## Style Guide Briefness Style
 - write in **newspaper headlinese**, prioritize brevity over grammar
 - use present for current, infinitive for planned

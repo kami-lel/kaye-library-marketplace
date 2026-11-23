@@ -3,7 +3,7 @@ name: u3d-pfb
 description: Turns Unity scene objects into prefabs & variant families early, so one edit updates every copy
 when_to_use: 'Building, duplicating, or reviewing scene objects, even when user never says "prefab": copy-pasted GameObjects, a 2nd enemy type, reusable popup, near-identical variants. Triggers: prefab, Prefab Variant, duplicate, reuse, "same as that one but"'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ## Prefab Usage

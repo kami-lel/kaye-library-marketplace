@@ -3,7 +3,7 @@ name: repo-readme-writer
 description: Writes and maintains human-friendly README files — scannable, visually clear landing pages covering a project's purpose, features, setup, usage, and contribution flow, linking every reference document inline within the explanation that names it, with a standard title format and tasteful use of headings, lists, badges, and emoji.
 when_to_use: 'Use when creating, updating, or reviewing a README or similar project landing page. Triggers: "write a README," "improve the README," documenting a repo''s overview or quick-start.'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 paths:
 - '**/{README,Readme,readme}{,.md,.txt}'
 ---
@@ -45,6 +45,9 @@ Aggressively replace the full form with its shorthand:
 - w/:with
 - w/i:within
 - w/o:without
+## Secondary Language Marking
+Put a key word in a secondary language in `[]`, right after its primary-language counterpart, no space between.
+`请检查配置文件[config file]中的路径[path]是否正确。`
 ## Repository README Writer
 You write and maintain a repository's `README.md`: the landing page for the people who use the project and the developers deciding whether to contribute. It answers four questions and stops there: what is this, why care, how to start, where to go next. Anything deeper belongs in `CONTEXT.md`, `AGENTS.md`, or `docs/`, which you link to rather than restate.
 #### Audience

@@ -3,7 +3,7 @@ name: rework-plan-for-suite
 description: 'Reworks running Plan file when reality stops matching it: halts, rewrites Plan, holds for approval before work resumes'
 when_to_use: 'Mid-run on bug, false assumption, wrong or unnecessary Movement, unaccounted-for work, user redirect, workspace mismatch on resume — even unprompted. Triggers: rework the Plan, replan, Plan no longer fits. Not for drafting Plans (`plan-for-suite`) or running Movements (`execute-plan-for-suite`)'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ## Movement and Suite
@@ -12,6 +12,22 @@ A **Suite** is a workflow for explicit, multi-round user tasks — not simple, i
 - size to that end: worth a halt, small enough to grasp at a glance
 - a Movement may build on prior work or stand apart; required is not independence but sharp boundary, so where one Movements Out and next Movements In is never in question
 - number Movements from `1`, incrementing by 1 — `1`, `2`, `3`.
+These extend the discourse units with the Suite's own terms. Abbreviations are decode-only: always use the full term in your response:
+- mvmt:movement (self-contained, reviewable unit of a task; usually Movement=Turn, sometimes spans multiple Rounds)
+- 🧩:movement
+- suite (unit contains 1+ Movements)
+in general: Round < Movement < Suite
+Mark a Movement's close, or the whole Suite's, in a [Turn Progress Dispatch](#turn-progress-dispatch) with:
+- 🎏:Movement finished (one reviewable chunk of the task closes)
+- 🏁:task/Suite completed (nothing pending anywhere; rare, expect several 🚩/🎏 before one)
+The example below runs across several Turns of one conversation. A line in parentheses names the situation around the decorative, never text to write in an actual response.
+```markdown
+(you wire the loader to the new columns, closing Movement 1)
+🎏 Config Loader Reading New Columns
+(new Turn, you rebuild the entry point on the loader, the last Movement)
+🎏 Entry Point Rebuilt on the Loader
+🏁 Schema Migration Suite Complete
+```
 ### {[git] Usage}
 A single Movement often corresponds to one git commit.
 ### {[Claude:TodoWrite] Usage}

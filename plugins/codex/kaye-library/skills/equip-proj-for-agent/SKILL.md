@@ -3,7 +3,7 @@ name: equip-proj-for-agent
 description: 'Equips project for AI agents: writes & maintains its `AGENTS.md`'
 when_to_use: 'Setting up or updating agent instructions for a generic project. Triggers: "equip project for agent", "make project AI-ready"'
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ## Project Context Engineering

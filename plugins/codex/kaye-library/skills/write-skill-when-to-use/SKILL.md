@@ -3,7 +3,7 @@ name: write-skill-when-to-use
 description: 'Writes a skill''s `when_to_use` field: trigger phrases, keywords, and a boundary note disambiguating it from neighboring skills.'
 when_to_use: When a user wants a skill's `when_to_use` field written, drafted, or reviewed on its own, not its `description` or other metadata.
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 # Meta Prompt

@@ -3,7 +3,7 @@ name: tend-linked-wt
 description: Places a feature branch's linked worktree, one per task, as `REPO-WT-FEATURE` inside the repository's `WS-` workspace folder, and removes it once its edits reach the main worktree.
 when_to_use: Trigger on starting, continuing, or finishing a task on a feature branch in a linked worktree, even when the user does not say so; also "new worktree for this feature", "work in a linked worktree", "don't touch main", "remove the worktree", `git worktree add`, `git worktree remove`.
 metadata:
-  version: 1.5.1
+  version: 1.6.0
 ---
 
 ## Tend Linked Worktree

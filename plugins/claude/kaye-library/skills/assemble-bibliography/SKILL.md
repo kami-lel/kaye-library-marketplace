@@ -3,7 +3,7 @@ name: assemble-bibliography
 description: Gathers every source cited in a document and builds its Chicago-style bibliography list.
 when_to_use: Trigger on "assemble the bibliography", "gather my sources", "build the works cited", or "list every source I cited".
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 # Amanuensis

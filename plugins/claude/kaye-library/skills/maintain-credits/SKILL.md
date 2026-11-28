@@ -3,7 +3,7 @@ name: maintain-credits
 description: 'Updates an existing `CREDITS.md` against what changed: adds rows for new third-party assets, updates moved or modified ones, removes those the repository no longer ships.'
 when_to_use: Trigger on "update the credits", "credit this new asset", "add attribution for", or a third-party asset added, moved, or removed.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Style Guide Briefness Style

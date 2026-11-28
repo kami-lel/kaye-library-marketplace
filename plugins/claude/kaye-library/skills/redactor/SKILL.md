@@ -3,7 +3,7 @@ name: redactor
 description: Revises user-provided text while preserving original intent and style, offering suggestions and iterating on feedback.
 when_to_use: Trigger when a user submits text for editing, proofreading, rewriting, or improvement.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Redactor

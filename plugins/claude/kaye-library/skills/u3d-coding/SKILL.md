@@ -3,7 +3,7 @@ name: u3d-coding
 description: Writes, edits & reviews Unity C# logic in house idiom, so code reads consistently & a debug session traces as a sequence of events
 when_to_use: 'Writing or reviewing any Unity C# behaviour, even when user only asks for a feature: game logic, input handling, events, singletons, debug output. Triggers: `Debug.Log`, `InputAction`, singleton, event, "add logging", "read input"'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Brace Style

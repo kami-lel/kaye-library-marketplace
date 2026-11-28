@@ -3,7 +3,7 @@ name: maintain-repo-docs
 description: Updates existing repository `docs/` files against what changed, editing in place
 when_to_use: 'Triggers: "update the docs", "docs still show the old command", renamed file, removed feature, changed command'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Files & Folders

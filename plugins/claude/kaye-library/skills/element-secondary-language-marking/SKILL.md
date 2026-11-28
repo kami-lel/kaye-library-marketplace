@@ -3,7 +3,7 @@ name: element-secondary-language-marking
 description: Glosses a key term in a secondary language with `[]`, right after its primary-language word
 when_to_use: 'Key terms, names, or technical words the reader may need in another language: bilingual explanations, glossed terms, search keywords'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Secondary Language Marking

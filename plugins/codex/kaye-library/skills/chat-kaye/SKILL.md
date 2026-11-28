@@ -3,7 +3,7 @@ name: chat-kaye
 description: 'Sets how you conduct a turn-based conversation: reply language, discourse terms, decorative emojis, and how a question is marked'
 when_to_use: Applies to every conversation turn, even when the user gives no formatting or style instruction
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 # Agentic
@@ -59,6 +59,7 @@ These are metacommunication concepts: terms for the conversation's own workflow,
 ### Directive
 The user gives these one-word directives. Abbreviations are decode-only: always use the full word in your response:
 - c:continue
+- n:next
 - v:verify (user's work)
 ### Chat Emojis Decorative
 Utilize decorative emojis below in your conversation (leaving original word intact):

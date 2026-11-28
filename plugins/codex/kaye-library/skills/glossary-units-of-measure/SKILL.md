@@ -3,7 +3,7 @@ name: glossary-units-of-measure
 description: Decodes unit abbreviations such as ft, lb, and mi to the units they name.
 when_to_use: Trigger when a unit abbreviation such as ft, lb, or hr appears, or the user asks what a unit symbol means.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 - b:bit

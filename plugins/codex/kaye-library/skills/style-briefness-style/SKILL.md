@@ -3,7 +3,7 @@ name: style-briefness-style
 description: 'Rewrites content in "Briefness Style" — terse, newspaper-headline prose that maximizes brevity: dropped articles and helper verbs, strong nouns and verbs, active voice, numerals and abbreviations, punctuation-compressed phrasing, no terminal periods.'
 when_to_use: Use when the user asks for headlinese, telegraphic, or ultra-condensed text — notes, headlines, summaries, bullets, status lines, captions — or says "make it brief/terse/punchy," "cut words," or "headline style." Not for prose needing full grammar, formal tone, or complete sentences.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Style Guide Briefness Style

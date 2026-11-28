@@ -3,7 +3,7 @@ name: coder-ue
 description: Writes, edits, and reviews Unreal Engine C++ under a fixed house style.
 when_to_use: 'Any Unreal Engine C++ work: `UCLASS`, `UPROPERTY`, `UFUNCTION`, `AActor`, Unreal headers and sources, or "write an Unreal class".'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 paths:
 - '**/*.{cpp,cc,cxx,hpp,hh,hxx}'
 ---

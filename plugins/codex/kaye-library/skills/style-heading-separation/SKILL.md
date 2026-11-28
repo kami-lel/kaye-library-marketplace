@@ -3,7 +3,7 @@ name: style-heading-separation
 description: Sets blank-line spacing before Markdown headers, scaled by header level and file-length tier
 when_to_use: Markdown docs needing header spacing rules when the file-length tier isn't yet known; defers to the long or medium variant once it is
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Header Separation

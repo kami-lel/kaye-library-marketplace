@@ -3,7 +3,7 @@ name: style-markdown-reference-link
 description: Weaves reference links, relative or external, into the sentence naming their topic, never a separate list
 when_to_use: 'Any reply or Markdown file citing a doc, page, or URL: "link the docs", "add references", "see also" sections, README pointers to `docs/`. Not for footnote or endnote markers, see Markdown Footnotes and Markdown Endnotes'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Reference Link Format

@@ -3,7 +3,7 @@ name: commit-sense
 description: Commits the indexed diff with a primary summary and a per-file ledger.
 when_to_use: Trigger on "g" (git commit), the most common trigger; also "commit this", "write a commit message", or a handed-over `git diff --cached`.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Letter Case Commentary Case

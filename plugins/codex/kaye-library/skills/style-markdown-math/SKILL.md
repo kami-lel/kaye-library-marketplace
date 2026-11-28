@@ -3,7 +3,7 @@ name: style-markdown-math
 description: 'Renders math in LaTeX: inline `$…$`, block `$$…$$`, each formula glossed symbol by symbol beneath it'
 when_to_use: 'Any equation, formula, variable, or calculation in a reply or Markdown file, even a short inline expression: "write the formula", "show the math", "derive", "LaTeX". Not for code that computes the values'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Math Formatting

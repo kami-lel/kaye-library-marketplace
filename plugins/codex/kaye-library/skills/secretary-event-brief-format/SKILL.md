@@ -3,7 +3,7 @@ name: secretary-event-brief-format
 description: 'Formats a set of events into `## 📡 Event Radar` briefs: an Event Heading, emoji-prefixed Key Details, and a briefness-style Event Overview per event.'
 when_to_use: Trigger whenever a set of events needs presenting as formatted briefs. Not for gathering or filtering events themselves.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Style Guide Briefness Style

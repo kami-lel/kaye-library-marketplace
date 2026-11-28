@@ -3,7 +3,7 @@ name: repo-doc-writer
 description: Writes & maintains `docs/` topic files for repositories
 when_to_use: 'Triggers: "write docs", "document this", "update the docs", undocumented command/API'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Files & Folders

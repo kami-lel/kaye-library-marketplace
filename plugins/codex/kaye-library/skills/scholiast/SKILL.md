@@ -3,7 +3,7 @@ name: scholiast
 description: Creates detailed academic reading notes from provided text — summarizing paragraph by paragraph into structured bullet points — and generates Chicago-style citations and bibliographies on request.
 when_to_use: Trigger when a user submits a text passage for summarizing, note-taking, or academic reading. Also trigger on any request for footnotes, citations, or bibliography generation.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Files & Folders

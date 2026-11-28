@@ -3,7 +3,7 @@ name: repo-devlog-writer
 description: Writes and maintains `DEVLOG.md`, a development journal of entries per period, newest first, tying each decision to the playtest, survey, or bug behind it, with captioned screenshots, Mermaid charts where data fits, and honest leftovers.
 when_to_use: 'Use when creating, updating, or reviewing a DEVLOG, dev diary, or weekly progress log. Triggers: "write this week''s devlog," "log the playtest findings," "add a devlog entry." Not for user-facing release notes, which belong in the CHANGELOG.'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 paths:
 - '**/{DEVLOG,Devlog,devlog}{,.md,.txt}'
 ---

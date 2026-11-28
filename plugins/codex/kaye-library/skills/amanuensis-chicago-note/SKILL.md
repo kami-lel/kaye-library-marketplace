@@ -3,7 +3,7 @@ name: amanuensis-chicago-note
 description: 'Generates Chicago Manual of Style notes-bibliography footnotes: kebab-case slugged markers, source-template citations, annotated notes, collected as native Markdown footnotes at file end'
 when_to_use: 'Trigger on "add footnote", "cite this", "format as CMS footnote", `[^slug]` markers, or inline citation requests needing notes-bibliography form. Boundary: footnote markers and end-of-file definitions only, not bibliography-list entries'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Markdown Footnotes

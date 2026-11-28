@@ -3,21 +3,20 @@ name: rework-plan-for-suite
 description: 'Reworks running Plan file when reality stops matching it: halts, rewrites Plan, holds for approval before work resumes'
 when_to_use: 'Mid-run on bug, false assumption, wrong or unnecessary Movement, unaccounted-for work, user redirect, workspace mismatch on resume — even unprompted. Triggers: rework the Plan, replan, Plan no longer fits. Not for drafting Plans (`plan-for-suite`) or running Movements (`play-suite`)'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Movement, Voice, and Suite
 An explicit, multi-round user task runs as 3 nested units: Suite, Voice, and Movement. Never use them for simple, implicit, or single-round work.
 **Suite**: the whole workflow for 1 such task
 - holds 1+ Voices, the Main Voice always among them
-- works on its feature branch, often 1 Suite = 1 feature branch, which every voice branch merges back into
+- works on its feature branch, often 1 Suite = 1 feature branch, which every instrumental branch merges back into
 - completes once every Voice has merged back and no Movement remains
 **Voice**: 1 line of Movements within a Suite, run in order
-- the **Main Voice** is the Suite's own line, marked 🧩: every Movement outside the other Voices, user Movements included; the main session runs it, never a subagent or another session
-- every other Voice is an **instrumental Voice**: agent only, with no user Movement, approval, or question inside it
-- an instrumental Voice runs in 1 of 2 modes, both following `solo-voice`: soloed by a subagent of the main session, or run in its own session
-- each instrumental Voice runs in parallel with the Main Voice and the rest, on its own voice branch and linked worktree; its voice branch is cut from the feature branch and merges back into it once its Movements are done
-- an instrument emoji therefore always marks an instrumental Voice
+- the **Main Voice** is the Suite's own line, marked 🧩: every Movement outside the other Voices, user Movements included; only the main session runs it
+- every other Voice is an **instrumental Voice**, marked by its instrument emoji: agent only, with no user Movement, approval, or question inside it
+- every Voice must be able to run in parallel with the rest, never waiting on another Voice's unmerged work
+- each instrumental Voice works on its own instrumental branch and linked worktree, cut from the feature branch and merged back into it once its Movements are done
 **Movement**: 1 division of a Voice, sized for when the whole cannot be held at once
 - design each Movement **reviewable**: one coherent unit user reads, judges, accepts or rejects on its own
 - size to that end: worth a halt, small enough to grasp at a glance
@@ -35,12 +34,12 @@ Name each instrumental Voice after an instrument, and mark it with that instrume
 These extend the discourse units with the Suite's own terms. Abbreviations are decode-only: always use the full term in your response:
 - mvmt:movement (self-contained, reviewable unit of a task; usually Movement=Turn, sometimes spans multiple Rounds)
 - 🧩:movement
-- voice (line of Movements within a Suite; any but the Main Voice is an instrumental Voice: agent only, soloed by a subagent or run in its own session, in parallel on its voice branch, then merged back into the feature branch)
+- voice (line of Movements within a Suite; any but the Main Voice is an instrumental Voice: agent only, soloed by a subagent or run in its own session, in parallel on its instrumental branch, then merged back into the feature branch)
 - suite (unit contains 1+ Voices)
 in general: Round < Movement < Voice < Suite
 ### {[git] Usage}
 Commit each Movement's edits as exactly one git commit: 1 Movement = 1 commit.
-Often 1 Suite = 1 feature branch. 1 Voice = 1 voice branch, cut from the feature branch and merged back into it.
+Often 1 Suite = 1 feature branch. 1 Voice = 1 instrumental branch, cut from the feature branch and merged back into it.
 ### Dispatch Marks
 Mark a Movement's close, an instrumental Voice's merge back, or the whole Suite's close in a [Turn Progress Dispatch](#turn-progress-dispatch) with:
 - 🎏:Movement finished (one reviewable chunk of the task closes)
@@ -75,8 +74,8 @@ Except in a markdown heading: spell out `Movement a` instead, eg `## Movement 5`
 ### Plan for Suite: Rework
 Halt the moment reality stops matching the Plan — a bug, a false assumption, a wrong or unnecessary Movement, unaccounted-for work, a user redirect, anything unanticipated. Never work around it.
 1. present the finding: the Plan's assumption, the reality, and the cost to the Movements still ahead
-2. rewrite the Plan whole — edit it in place, or author an entirely new file — never a diff, excerpt, or the rework alone. Keep completed Movements untouched and numbered; revise, remove, or add the rest as the finding demands
-3. set every Movement's Status keyword per [Bar 3: Write the Plan](#bar-3-write-the-plan), so the file reads cold as exactly how far the run got and what the finding cost
+2. rewrite the Plan whole — edit it in place, or author an entirely new file — never a diff, excerpt, or the rework alone. Keep completed Movements untouched and numbered; revise, remove, or add the rest as the finding demands, and append the rework to the history in `## Rework`
+3. set every Movement's Status keyword per [Bar 2: Write the Plan](#bar-2-write-the-plan), so the file reads cold as exactly how far the run got and what the finding cost
 4. never renumber to make room. A split Movement keeps its number and gains sub-Movements beneath it — `Movement 1` becomes `Movement 1.1` and `Movement 1.2`
-5. present the revised Plan and hold for approval, as in [Bar 3: Write the Plan](#bar-3-write-the-plan)
+5. present the revised Plan and hold for approval, as in [Bar 2: Write the Plan](#bar-2-write-the-plan)
 6. once approved, Movement In to the earliest unfinished Movement, and not sooner

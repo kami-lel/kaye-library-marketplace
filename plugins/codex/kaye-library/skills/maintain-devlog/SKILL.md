@@ -3,7 +3,7 @@ name: maintain-devlog
 description: 'Adds the current period''s entry to an existing `DEVLOG.md`: findings, fixes tied to them, other work, leftovers, and captioned screenshots, leaving past entries as written.'
 when_to_use: Trigger on "write this week's devlog", "add a devlog entry", "log the playtest findings", or a period's work ready to record.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Diagrams

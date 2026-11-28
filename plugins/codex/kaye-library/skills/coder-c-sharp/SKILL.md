@@ -3,7 +3,7 @@ name: coder-c-sharp
 description: 'Writes, edits, and reviews C# code under a fixed house style: brace placement and XML documentation comments.'
 when_to_use: Use for any C# code work, requests for C#, mentions of .NET.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 paths:
 - '**/*.cs'
 ---

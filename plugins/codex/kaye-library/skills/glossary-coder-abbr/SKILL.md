@@ -3,7 +3,7 @@ name: glossary-coder-abbr
 description: Decodes common programming abbreviations such as ctor, iface, and mpl.
 when_to_use: Trigger when a user writes programming shorthand such as ctor, iface, or xcp, or asks what a code abbreviation stands for.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 - AC:abstract class

@@ -3,7 +3,7 @@ name: element-dt-year-month-day-format
 description: Formats a date carrying a year, day of week prefix optional
 when_to_use: 'Any output date whose year is known or matters: deadlines, timestamps, log entries, filenames, historical dates, spans crossing a year boundary'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Date and Time Format

@@ -3,7 +3,7 @@ name: scan-event-radar-weekly
 description: Scans the event radar across the coming week and formats what it finds into one weekly brief.
 when_to_use: Use for raw event lists needing parse & format.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ## Task Blockage Workaround

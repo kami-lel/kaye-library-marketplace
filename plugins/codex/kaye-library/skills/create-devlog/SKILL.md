@@ -3,7 +3,7 @@ name: create-devlog
 description: Bootstraps a `DEVLOG.md` for a repository that has none, reconstructing one entry per period, newest first, from the commit log, tags, CHANGELOG, and playtest notes.
 when_to_use: Trigger on "start a devlog", "create a DEVLOG", "write a dev diary from the history", or a repository with no `DEVLOG.md`.
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 ---
 
 ### Diagrams

@@ -3,7 +3,7 @@ name: proj-version
 description: 'Defines the semantic versioning scheme: how MAJOR, MINOR, and PATCH numbers are chosen and written.'
 when_to_use: 'Any version-number decision: "what version is next", "bump the version", semver, pre-release tags, or a breaking-change release.'
 metadata:
-  version: 1.6.1
+  version: 1.6.2
 user-invocable: false
 ---
 

@@ -3,7 +3,7 @@ name: glossary-secretary-eisenhower-matrix-quadrant
 description: Names the four Eisenhower matrix quadrants by Important and Urgent, with their emoji shorthand.
 when_to_use: Trigger when a task is sorted by importance and urgency, or EMQ, EMQ I to IV, or the symbols 💎 and 🚨 appear.
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 - EMQ:Einsenhower Matrix Quadrant (categorize tasks/todos into 1 of 4 quadrants)

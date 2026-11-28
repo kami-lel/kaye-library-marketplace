@@ -3,7 +3,7 @@ name: maintain-changelog
 description: Use this skill when the user wants to add, fix, or reorganize entries in an existing CHANGELOG — logging new features, bug fixes, or breaking changes without overwriting existing content. Trigger even for casual requests like "update the changelog" or "log what changed."
 when_to_use: Trigger on "update the changelog", "log what changed", "add a changelog entry", or "fix a changelog entry".
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Style Guide Briefness Style
@@ -74,7 +74,39 @@ Aggressively replace the full form with its shorthand:
 - alpha: `1.0.0-alpha`, `1.0.0-alpha.2`, ~~
 - beta: `1.0.0-beta`, `1.0.0-beta.2`, ~~
 - Release Candidate (RC): `1.0.0-rc`, `1.0.0-rc.2`
-- first Stable Release: `1.0.0`
+- first major release: `1.0.0`
+### semantic version bump
+A **semantic version bump** is the part of the version core (major, minor, patch) the new version raised over the old one. Compare the two cores:
+| Bump | When |
+|---|---|
+| Major | `x` is higher |
+| Minor | `y` is higher, `x` equal |
+| Patch | `z` is higher, `x` and `y` equal |
+Where none holds (equal, lower, or either side not `x.y.z`), the version has no bump.
+### Semantic Version Title
+Write the title of a version release as `BUMP TYPE VERSION`:
+1. Find BUMP: compare the new version with the old one, per [semantic version bump](#semantic-version-bump).
+2. Find TYPE: look up the new version in the table below.
+Drop BUMP when the new version has no bump. TYPE is never dropped.
+##### release type
+Check the new version against the rows from top to bottom. Stop at the first match.
+| Version | Type |
+|---|---|
+| contains `-alpha` | Alpha Release |
+| contains `-beta` | Beta Release |
+| contains `-rc` | Release Candidate |
+| `0.9.z` | Pre-Alpha Release |
+| `0.5.z`~`0.8.z`, only when Vertical Slice is enabled | Vertical Slice |
+| `0.y.z` | Prototype |
+| `x.y.z` | Release |
+##### examples
+| New | Old | Title |
+|---|---|---|
+| `0.3.2` | `0.3.1` | `Patch Prototype 0.3.2` |
+| `0.9.3` | `0.9.2` | `Patch Pre-Alpha Release 0.9.3` |
+| `1.0.0-beta.2` | `0.9.0` | `Major Beta Release 1.0.0-beta.2` |
+| `1.0.0-rc` | `1.0.0-beta.2` | `Release Candidate 1.0.0-rc` |
+| `1.1.0` | `1.0.0` | `Minor Release 1.1.0` |
 ## Repository CHANGELOG Writer
 these guidelines define what a good `CHANGELOG.md` (or CHANGELOG-style file) is
 #### Guiding Principles
@@ -90,6 +122,7 @@ Structure:
 Versions:
 - carry every version, latest first, numbered per [Project Semantic Version](#project-semantic-version)
 - show the release date beside each version
+- head each release `## <date>: <title>`, the title per [Semantic Version Title](#semantic-version-title) with its version as the link, eg `## 2026-11-23: Minor Release [1.6.0]`
 #### Types of Changes
 - `Added`: new features
 - `Changed`: changes in existing functionality
@@ -111,7 +144,7 @@ Versions:
 
 [unreleased]: https://github.com/example-user/example-project/compare/v2.0.0...dev
 
-## [2.0.0] - 2024-01-15
+## 2024-01-15: Major Release [2.0.0]
 
 ### Removed
 
@@ -121,14 +154,14 @@ Versions:
 > Drops support for Node 14; upgrade before updating
 [2.0.0]: https://github.com/example-user/example-project/compare/v1.5.7...v2.0.0
 
-## [1.5.7] - 2023-12-04
+## 2023-12-04: Patch Release [1.5.7]
 
 ### Fixed
 - Profile picture not rendering correctly on Safari
 
 [1.5.7]: https://github.com/example-user/example-project/compare/v1.5.6...v1.5.7
 
-## [1.5.6] - 2023-11-02
+## 2023-11-02: Patch Release [1.5.6]
 
 ### Added
 

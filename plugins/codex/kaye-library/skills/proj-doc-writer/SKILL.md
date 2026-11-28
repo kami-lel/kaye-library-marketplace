@@ -3,7 +3,7 @@ name: proj-doc-writer
 description: Writes & maintains `docs/` topic files for generic projects
 when_to_use: 'Triggers: "write docs", "document this project", "update the docs"'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Files & Folders

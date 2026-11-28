@@ -3,13 +3,13 @@ name: maintain-project-agents
 description: Updates an existing project `AGENTS.md` against what changed, editing in place
 when_to_use: 'Triggers: "update AGENTS.md", "AGENTS.md is out of date", changed member, deadline, or decision'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## agents writer
 Apply these rules to `AGENTS.md`, formatting it per [Style Guide Markdown Format](#style-guide-markdown-format).
 Suggested Sections go under clear `##` headings: use what fits, omit rather than pad, and add any section carrying a project-specific behavioral rule. Keep content to rules and constraints an agent acts on. Each writer below lists its own.
-The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises.
+The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises. It also links each scoped `AGENTS.md` and `CONTEXT.md`, phrased "when working in `Frontend/`, read `Frontend/AGENTS.md`".
 #### AGENTS Title & Preface
 ```markdown
 # Example Project AGENTS
@@ -25,10 +25,7 @@ Prescriptive rules for agents working in this project.
 - Local Layer: put machine-specific or personal rules in `AGENTS.local.md`; create it if missing, never commit it
 ```
 Replace `Example Project` with the real project name. Copy the preface exactly, word for word.
-The personal layer's title line, marked as local:
-```markdown
-# Example Project local AGENTS
-```
+A scoped `AGENTS.md` or a local `AGENTS.local.md` follows the same format, standard, and style, per [Project Context Engineering](#project-context-engineering).
 ### Project AGENTS Writer
 ##### Suggested Sections
 Keep content to rules, constraints, and who decides.
@@ -47,6 +44,6 @@ Split content by topic, never by type: a tool or resource link tied to productio
 You work from a **change set**: what the conversation and the project have altered since the file was last written. A section the change set never reaches is left exactly as it reads.
 1. edit in place: fold new material into the section it belongs to, correct what the change set falsified, delete only what it retired
 2. leave sound wording, structure, and length alone
-3. verify facts against the project; keep the root generic and scoped files scoped
+3. verify facts against the project; edit the nearest layer covering the changed path, per [Project Context Engineering](#project-context-engineering), and promote a rule to the root only when it holds project-wide
 4. create a missing file only where the change set requires it
 5. follow [Project AGENTS Writer](#project-agents-writer) and [Style Guide Markdown Format](#style-guide-markdown-format), then return a brief summary of the changes

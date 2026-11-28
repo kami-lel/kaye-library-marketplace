@@ -3,7 +3,7 @@ name: u3d-common-type-and-suffix
 description: Assigns each Unity class, script, GameObject, or asset one architectural role, so responsibilities split cleanly & its name says what it does
 when_to_use: 'Designing a Unity system or deciding what a new class should own, even when user only asks "manager or controller?": splitting a god class, picking a pattern, reviewing a misnamed script. Triggers: manager, controller, architecture, responsibility, design pattern, MVP, event pipe, "what should this class be"'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Common Type and Suffix

@@ -3,7 +3,7 @@ name: dispositor
 description: Writes & maintains structured, hierarchical personal notes under 1 consistent filename, framing & prose grammar.
 when_to_use: 'Trigger on any request to draft, continue, reformat or audit a personal note file — reading notes, lecture notes, session notes, journals. Keywords: note, filename, dated heading, shorthand.'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Files & Folders

@@ -3,7 +3,7 @@ name: commit-sense-branch-merging
 description: 'Writes the message of a merge in progress: a typed first line prepended to Git''s own message.'
 when_to_use: 'Trigger mid-merge, before the merge commit: "write the merge message", "message for this merge", "land the feature message", or any request to word a pending merge commit.'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 # Style Guide
@@ -77,28 +77,29 @@ A **semantic version bump** is the part of the version core (major, minor, patch
 | Patch | `z` is higher, `x` and `y` equal |
 Where none holds (equal, lower, or either side not `x.y.z`), the version has no bump.
 ### Semantic Version Title
-A version title names a version release: `<Bump> <Release Type> <version>`. It depends on the [bump word](#semantic-version-bump), which drops out when the new version has no bump.
+Write the title of a version release as `BUMP TYPE VERSION`:
+1. Find BUMP: compare the new version with the old one, per [semantic version bump](#semantic-version-bump).
+2. Find TYPE: look up the new version in the table below.
+Drop BUMP when the new version has no bump. TYPE is never dropped.
 ##### release type
-Check the new version against these rows in order; the first match wins:
-| Version | Release Type |
+Check the new version against the rows from top to bottom. Stop at the first match.
+| Version | Type |
 |---|---|
 | contains `-alpha` | Alpha Release |
 | contains `-beta` | Beta Release |
 | contains `-rc` | Release Candidate |
 | `0.9.z` | Pre-Alpha Release |
-| `0.5.z`~`0.9.z`, only when Vertical Slice is enabled | Vertical Slice Release |
-| `0.y.z` | Prototype Release |
-| `x.y.z` | Stable Release |
-Write no bump word on alpha, beta, or release candidate titles: the tag already states the stage.
+| `0.5.z`~`0.8.z`, only when Vertical Slice is enabled | Vertical Slice |
+| `0.y.z` | Prototype |
+| `x.y.z` | Release |
 ##### examples
 | New | Old | Title |
 |---|---|---|
-| `0.3.2` | `0.3.1` | `Patch Prototype Release 0.3.2` |
+| `0.3.2` | `0.3.1` | `Patch Prototype 0.3.2` |
 | `0.9.3` | `0.9.2` | `Patch Pre-Alpha Release 0.9.3` |
-| `1.0.0-beta.2` | `0.9.0` | `Beta Release 1.0.0-beta.2` |
-| `1.0.0` | `0.9.0` | `Major Stable Release 1.0.0` |
-| `1.1.0` | `1.0.0` | `Minor Stable Release 1.1.0` |
-| `1.1.1` | `1.1.1` | `Stable Release 1.1.1` |
+| `1.0.0-beta.2` | `0.9.0` | `Major Beta Release 1.0.0-beta.2` |
+| `1.0.0-rc` | `1.0.0-beta.2` | `Release Candidate 1.0.0-rc` |
+| `1.1.0` | `1.0.0` | `Minor Release 1.1.0` |
 # Git
 ## commit sensing
 You are given the result of `git diff --cached` — read it as the changes staged for commit, and distill them into their **essential meaning**.

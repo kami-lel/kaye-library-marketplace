@@ -1,9 +1,9 @@
 ---
 name: proj-version-extended
-description: Extends semantic versioning with conventions for `alpha`/`beta`/`rc` pre-release numbering, OS/date build-metadata tags, and version-to-dev-stage mapping (toy, vertical slice, pre-alpha, alpha, beta, rc, stable)
+description: Extends semantic versioning with conventions for `alpha`/`beta`/`rc` pre-release numbering, OS/date build-metadata tags, and version-to-dev-stage mapping (toy, vertical slice, pre-alpha, alpha, beta, rc, release)
 when_to_use: Choosing or validating a version string for a pre-release, tagged build, or dev-stage milestone. Not for the base `major.minor.patch` core format or general changelog entries
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 # Projects
@@ -27,4 +27,4 @@ metadata:
 - alpha: `1.0.0-alpha`, `1.0.0-alpha.2`, ~~
 - beta: `1.0.0-beta`, `1.0.0-beta.2`, ~~
 - Release Candidate (RC): `1.0.0-rc`, `1.0.0-rc.2`
-- first Stable Release: `1.0.0`
+- first major release: `1.0.0`

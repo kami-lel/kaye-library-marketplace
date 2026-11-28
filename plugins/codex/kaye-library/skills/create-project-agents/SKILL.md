@@ -3,13 +3,13 @@ name: create-project-agents
 description: Creates `AGENTS.md` for a generic project that has none
 when_to_use: 'Triggers: "write an AGENTS.md for this project", "add agent instructions", "set up agent rules"'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## agents writer
 Apply these rules to `AGENTS.md`, formatting it per [Style Guide Markdown Format](#style-guide-markdown-format).
 Suggested Sections go under clear `##` headings: use what fits, omit rather than pad, and add any section carrying a project-specific behavioral rule. Keep content to rules and constraints an agent acts on. Each writer below lists its own.
-The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises.
+The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises. It also links each scoped `AGENTS.md` and `CONTEXT.md`, phrased "when working in `Frontend/`, read `Frontend/AGENTS.md`".
 #### AGENTS Title & Preface
 ```markdown
 # Example Project AGENTS
@@ -25,10 +25,7 @@ Prescriptive rules for agents working in this project.
 - Local Layer: put machine-specific or personal rules in `AGENTS.local.md`; create it if missing, never commit it
 ```
 Replace `Example Project` with the real project name. Copy the preface exactly, word for word.
-The personal layer's title line, marked as local:
-```markdown
-# Example Project local AGENTS
-```
+A scoped `AGENTS.md` or a local `AGENTS.local.md` follows the same format, standard, and style, per [Project Context Engineering](#project-context-engineering).
 ### Project AGENTS Writer
 ##### Suggested Sections
 Keep content to rules, constraints, and who decides.
@@ -45,5 +42,5 @@ Keep content to rules, constraints, and who decides.
 Split content by topic, never by type: a tool or resource link tied to production sits under Production, not in a separate links section.
 ### Create Project AGENTS
 1. ground the file in the project's own material and the conversation; write only what they support
-2. keep the root file generic; add a scoped file only where a subfolder's rules differ
+2. keep the root file generic; add a scoped file only where a subfolder's rules differ; gitignore `**/AGENTS.local.md` and `**/CONTEXT.local.md` in the same pass
 3. create `AGENTS.md` per [Project AGENTS Writer](#project-agents-writer), formatted per [Style Guide Markdown Format](#style-guide-markdown-format)

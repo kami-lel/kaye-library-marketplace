@@ -3,7 +3,7 @@ name: u3d-so
 description: Structures Unity `ScriptableObject` classes in one fixed layout, keeping asset data read-only & valid at runtime
 when_to_use: 'Any designer-editable data living outside a scene, even when user only says "config", "settings", "database", "shared data": level config, item stats, event channel. Triggers: `ScriptableObject`, `CreateAssetMenu`, `.asset`, data container'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ### Scriptable Object

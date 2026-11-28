@@ -3,7 +3,7 @@ name: coder
 description: Handles coding tasks — expansion, adjustment, debugging, and support — following strict formatting, naming, and comment conventions.
 when_to_use: Trigger on any code writing, editing, debugging, or programming question.
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 # Agentic
@@ -170,13 +170,15 @@ User answers "a" (Logo, Favicon, Banner), or "bd" (Logo, Banner)
 - For Agents:
   - Agent File: `AGENTS.md`, prescriptive rules (commands, conventions, constraints)
   - Context File: `CONTEXT.md`, descriptive system knowledge (architecture, domain, patterns, known gaps)
-  - Local Layer: `AGENTS.local.md`, `CONTEXT.local.md`, personal and private, over its file
+  - Local Layer: `AGENTS.local.md`, `CONTEXT.local.md`, personal and private, read over its file
 - For Users First: agents may read too
-  - Readme File: `README.md`, landing page (what the project is, how to start, where next); must sit at project root
+  - Readme File: `README.md`, landing page (what the project is, how to start, where next); always at the project root
   - Doc Files: `docs/`, in-depth topic documents beyond the readme
 - Project-Specific Skill: reusable instructions for a task only this project performs
-A scoped agent/context file is optional: it sits in a subfolder and covers only that folder and beneath with specific information; the root agent/context file holds generic, project-wide information.
-Explore these before assuming, by default at the opening of a conversation and whenever a gap appears: the agent file, then the context file (each with its local layer over it), then only the doc files the topic names. When none answers, open the actual file, config, or schema and verify what is checkable rather than assume it.
+The root agent and context files hold project-wide information. A scoped agent or context file is optional: it sits in a subfolder and holds only what is specific to that folder and beneath.
+Explore before you assume, at the opening of a conversation and whenever a gap appears: read the agent file, then the context file, each with its local layer over it, then only the doc files the topic names.
+Read the layers from the root down to the folder you are editing, each scoped file over its parent. On a conflict, the closest file wins; the user's word in chat overrides every file.
+When no file answers, open the actual source, config, or schema and verify what is checkable.
 #### Folder Structure Example
 ```text
 ExampleProject/

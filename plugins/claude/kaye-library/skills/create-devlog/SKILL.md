@@ -3,9 +3,16 @@ name: create-devlog
 description: Bootstraps a `DEVLOG.md` for a repository that has none, reconstructing one entry per period, newest first, from the commit log, tags, CHANGELOG, and playtest notes.
 when_to_use: Trigger on "start a devlog", "create a DEVLOG", "write a dev diary from the history", or a repository with no `DEVLOG.md`.
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
+### Diagrams
+Use **Mermaid** syntax inside fenced code blocks to render diagrams, graphs, flowcharts, and visual representations. Eg
+```mermaid
+graph LR
+  A --> B --> C
+```
+Read "Y vs X" as Y on the y axis, X on the x axis, eg "Height vs Time".
 ### Markdown File Assets
 Keep a Markdown file's assets, mostly images, in a sibling folder named for it, so the file and its assets move together.
 - Folder: base name plus `-assets`, case kept, holding that file's assets only: `CHANGELOG.md` → `CHANGELOG-assets/`
@@ -112,28 +119,29 @@ A **semantic version bump** is the part of the version core (major, minor, patch
 | Patch | `z` is higher, `x` and `y` equal |
 Where none holds (equal, lower, or either side not `x.y.z`), the version has no bump.
 ### Semantic Version Title
-A version title names a version release: `<Bump> <Release Type> <version>`. It depends on the [bump word](#semantic-version-bump), which drops out when the new version has no bump.
+Write the title of a version release as `BUMP TYPE VERSION`:
+1. Find BUMP: compare the new version with the old one, per [semantic version bump](#semantic-version-bump).
+2. Find TYPE: look up the new version in the table below.
+Drop BUMP when the new version has no bump. TYPE is never dropped.
 ##### release type
-Check the new version against these rows in order; the first match wins:
-| Version | Release Type |
+Check the new version against the rows from top to bottom. Stop at the first match.
+| Version | Type |
 |---|---|
 | contains `-alpha` | Alpha Release |
 | contains `-beta` | Beta Release |
 | contains `-rc` | Release Candidate |
 | `0.9.z` | Pre-Alpha Release |
-| `0.5.z`~`0.9.z`, only when Vertical Slice is enabled | Vertical Slice Release |
-| `0.y.z` | Prototype Release |
-| `x.y.z` | Stable Release |
-Write no bump word on alpha, beta, or release candidate titles: the tag already states the stage.
+| `0.5.z`~`0.8.z`, only when Vertical Slice is enabled | Vertical Slice |
+| `0.y.z` | Prototype |
+| `x.y.z` | Release |
 ##### examples
 | New | Old | Title |
 |---|---|---|
-| `0.3.2` | `0.3.1` | `Patch Prototype Release 0.3.2` |
+| `0.3.2` | `0.3.1` | `Patch Prototype 0.3.2` |
 | `0.9.3` | `0.9.2` | `Patch Pre-Alpha Release 0.9.3` |
-| `1.0.0-beta.2` | `0.9.0` | `Beta Release 1.0.0-beta.2` |
-| `1.0.0` | `0.9.0` | `Major Stable Release 1.0.0` |
-| `1.1.0` | `1.0.0` | `Minor Stable Release 1.1.0` |
-| `1.1.1` | `1.1.1` | `Stable Release 1.1.1` |
+| `1.0.0-beta.2` | `0.9.0` | `Major Beta Release 1.0.0-beta.2` |
+| `1.0.0-rc` | `1.0.0-beta.2` | `Release Candidate 1.0.0-rc` |
+| `1.1.0` | `1.0.0` | `Minor Release 1.1.0` |
 ## Repository DEVLOG Writer
 You write and maintain a repository's `DEVLOG.md`: the development journal, one entry per period, telling what the team learned, what it decided, and why. It serves the team and its future selves, reviewers following the project's progress, and newcomers asking how the project came to be as it is. `CHANGELOG.md` lists what changed for users, version by version, and `CONTEXT.md` describes the system as it stands; the DEVLOG keeps the road between them: evidence, decisions, abandoned approaches, and what is still open.
 #### DEVLOG Title
@@ -151,7 +159,7 @@ Replace `Example Repository` with the real repository name.
 ## 02026-03-04
 ## 02026-03-11 (Week 6)
 ## 02026-03-18: Patch Pre-Alpha Release `0.9.3`
-## 02026-03-25 (Week 8): Beta Release `1.0.0-beta.2`
+## 02026-03-25 (Week 8): Major Beta Release `1.0.0-beta.2`
 ```
 </devlog-heading-example>
 #### Entry Body
@@ -161,7 +169,7 @@ Hold this order, dropping any part the period gives nothing for:
 3. Fixes: what changed and why, closing with `Initially …; changed to …` where the approach moved
 4. Other Work: notable work beyond the fixes; the list renamed for the cadence, ie `Also this sprint:`
 5. Leftovers: what stays open, and which later entry takes it up
-6. Images: screenshots and charts
+6. Images and Charts: screenshots, then Mermaid charts of the period's data
 A period with no outside evidence, ie a feature push, drops Findings and labels each item with its feature instead.
 <devlog-entry-example>
 ```markdown
@@ -195,6 +203,22 @@ Not addressed yet: a flyover introduction, suggested by a player
 ```markdown
 <!-- TODO screenshot: oil gauge near empty, before the flicker -->
 ```
+#### Charts
+- chart data whose shape reads faster as a picture than as a list, ie a metric across builds or periods, a survey's split, a before-and-after count; draw it in Mermaid per [Diagrams](#diagrams), never as a screenshot of a spreadsheet
+- pick the form by the data: `xychart-beta` for a measure vs build or period, `pie` for shares of one whole, `flowchart` for a flow a fix changed
+- title it "Y vs X", and caption it like an image, saying what to notice
+- keep the finding in words: the chart shows the evidence, the entry states the conclusion
+- skip the chart for fewer than 3 data points, or where one sentence says it all
+<devlog-chart-example>
+```mermaid
+xychart-beta
+  title "Tutorial Completion vs Build"
+  x-axis ["alpha.1", "alpha.2", "alpha.3"]
+  y-axis "Completion (%)" 0 --> 100
+  bar [42, 58, 81]
+```
+*Tutorial completion: up with each starting-zone pass, past 80% in `alpha.3`*
+</devlog-chart-example>
 #### Living Record
 - write each entry during or right after its period, while the reasons are fresh
 - leave past entries as written: a journal records what was believed at the time. Correct only factual errors, and, when a later period takes up a leftover, point that leftover forward to it

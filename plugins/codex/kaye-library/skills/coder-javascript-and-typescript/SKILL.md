@@ -3,7 +3,7 @@ name: coder-javascript-and-typescript
 description: Writes, edits, and reviews all JavaScript and TypeScript code, targeting the ES11 standard with camelCase naming and JSDoc documentation conventions.
 when_to_use: Use for any JavaScript or TypeScript work, inline JS/TS code blocks, requests for JavaScript, TypeScript, or Node.
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 paths:
 - '**/*.{js,ts,jsx,tsx,mjs,cjs}'
 ---

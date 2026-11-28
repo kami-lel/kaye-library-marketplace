@@ -3,7 +3,7 @@ name: style-markdown-heading
 description: 'Sets Markdown heading levels by the content''s real nesting: 1 h1 title, h2 primary sections, deeper levels only as deep as content goes, skipped-level local headings for 1-off sub-cases'
 when_to_use: 'Choosing heading levels in any Markdown reply or file: "which heading level", "restructure the headings", "outline this doc", nested sections, a 1-off sub-case needing its own label. Not for blank-line spacing before headings, see Header Separation'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ### Markdown Heading Format

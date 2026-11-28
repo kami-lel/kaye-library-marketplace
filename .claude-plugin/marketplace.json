@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "kaye-library-marketplace",
   "description": "A ready-to-install library of reusable LLM instructions: shared rules for writing, git, repositories, and coding, authored once in Markdown and ready to use as skills, plugins, or plain prompts, so any agent works to the same high standard from its first prompt, powered by kaye-engine",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "owner": {
     "name": "kamiLeL",
     "email": "77594253+kami-lel@users.noreply.github.com"
@@ -13,7 +13,7 @@
       "source": "./plugins/claude/kaye-library",
       "displayName": "Kaye Library",
       "description": "A ready-to-install library of reusable LLM instructions: shared rules for writing, git, repositories, and coding, authored once in Markdown and ready to use as skills, plugins, or plain prompts, so any agent works to the same high standard from its first prompt, powered by kaye-engine",
-      "version": "1.6.0",
+      "version": "1.6.1",
       "author": {
         "name": "kamiLeL",
         "email": "77594253+kami-lel@users.noreply.github.com"

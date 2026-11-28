@@ -3,7 +3,7 @@ name: coder-command-usage-message
 description: writes command usage messages — the compact call-shape reference a command prints for `--help`, in errors, or atop a manual page
 when_to_use: fires on "usage line", "usage message", "synopsis", `--help` text, argument syntax, or any command-line interface whose accepted call shapes need spelling out. Also fires when reviewing existing usage text for notation or ordering. Not for the prose option descriptions that follow it
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 # Style Guide

@@ -3,7 +3,7 @@ name: coder-comment-banner-in-print-out
 description: writes banners into printed program output — ranked heading-plus-ruler dividers separating run titles, execution phases, and nested checks across logs, demos, and test runs
 when_to_use: 'any script or program emitting multi-phase terminal output: run headers, stage separators, log-section dividers, demo and test-phase markers. Trigger on "CB0"–"CB5", "banner", "divider", "phase header" alongside print, echo, or logging calls — and whenever generated output spans distinct phases a reader must scan. Not for banners living inside code comments'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Comment Banner

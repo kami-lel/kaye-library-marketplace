@@ -3,7 +3,7 @@ name: coder-bash-script
 description: writes Bash script files, functions, and sourced libraries for Debian GNU/Linux under a fixed house style.
 when_to_use: 'fires on durable shell artifacts: `.sh`, `.bash`, `bashrc`, function definitions, scripts to extend, refactor, or document. Cues: "write a script", "add a function", header comment, exit status. Not for throwaway terminal lines — those go to Coder Bash Shell'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Bash

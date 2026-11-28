@@ -3,7 +3,7 @@ name: u3d-mb
 description: Structures Unity `MonoBehaviour` scripts in one fixed layout, so every component reads alike & missing Inspector assignments surface at startup
 when_to_use: 'Any Unity script attached to a GameObject, the default shape of most gameplay code, even when user never names `MonoBehaviour`: player, enemy, trigger zone, camera rig, UI behaviour. Triggers: `MonoBehaviour`, `Awake`, `Update`, `OnTriggerEnter`, `GetComponent`, "add a component"'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Style Guide Briefness Style

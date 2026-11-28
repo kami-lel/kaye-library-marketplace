@@ -1,15 +1,15 @@
 ---
 name: condense-agents-and-context
-description: 'Shrinks an existing AGENTS and CONTEXT pair: reads both whole, drops finished plans, dead workflows, superseded detail, anything the code already answers, tightens the rest, adds nothing'
+description: 'Shrinks an existing AGENTS and CONTEXT pair, root and scoped layers alike: reads each whole, drops finished plans, dead workflows, superseded detail, anything the code already answers, tightens the rest, adds nothing'
 when_to_use: 'Fires when the pair has outgrown its content: an `AGENTS.md` too long to keep in context, a "Planned" or "In Progress" or "Migration" section describing finished work, a directory tree the source now contradicts, one rule stated in both files. Also "AGENTS.md is 600 lines", "cut CLAUDE.md down", "why is CONTEXT.md so long". Apply unasked before a release or handoff. Not when new work needs recording'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## agents writer
 Apply these rules to `AGENTS.md`, formatting it per [Style Guide Markdown Format](#style-guide-markdown-format).
 Suggested Sections go under clear `##` headings: use what fits, omit rather than pad, and add any section carrying a project-specific behavioral rule. Keep content to rules and constraints an agent acts on. Each writer below lists its own.
-The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises.
+The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises. It also links each scoped `AGENTS.md` and `CONTEXT.md`, phrased "when working in `Frontend/`, read `Frontend/AGENTS.md`".
 #### AGENTS Title & Preface
 ```markdown
 # Example Project AGENTS
@@ -25,10 +25,7 @@ Prescriptive rules for agents working in this project.
 - Local Layer: put machine-specific or personal rules in `AGENTS.local.md`; create it if missing, never commit it
 ```
 Replace `Example Project` with the real project name. Copy the preface exactly, word for word.
-The personal layer's title line, marked as local:
-```markdown
-# Example Project local AGENTS
-```
+A scoped `AGENTS.md` or a local `AGENTS.local.md` follows the same format, standard, and style, per [Project Context Engineering](#project-context-engineering).
 ### Repository AGENTS Writer
 ##### Suggested Sections
 Keep content command-oriented; descriptive architecture and domain knowledge belong in `CONTEXT.md`.
@@ -72,10 +69,7 @@ Descriptive knowledge of this repository for agents and developers.
 - Local Layer: put machine-specific or personal context in `CONTEXT.local.md`; create it if missing, never commit it
 ```
 Replace `Example Repository` with the real repository name. Copy the preface exactly, word for word.
-The personal layer's title line, marked as local:
-```markdown
-# Example Repository local CONTEXT
-```
+A scoped `CONTEXT.md` or a local `CONTEXT.local.md` follows the same format, standard, and style, per [Project Context Engineering](#project-context-engineering).
 #### Suggested Sections
 Recommended, not mandatory — use what fits under clear `##` headings, and omit rather than pad. Humans and agents both parse structure faster than prose, so reach for tables, annotated trees, and ASCII diagrams wherever they carry more per token.
 - Project Overview: what the app is, who it serves, major tech. A stack table works well
@@ -101,10 +95,10 @@ Recommend in-file: update `CONTEXT.md` in the same pull request as the change; h
 - complementary to `README.md` and `AGENTS.md`, duplicating neither
 ## Condense AGENTS and CONTEXT
 You work from the **files alone**: no change set, no conversation to draw on, nothing new to add. Every line already there is read once and then kept, shortened, moved, or dropped.
-1. read each file whole, judging every section on whether it still earns the space it takes
+1. find every AGENTS and CONTEXT pair in the tree, the root and each scoped layer; read each file whole, judging every section on whether it still earns the space it takes
 2. drop what has gone stale: a workflow nobody follows now, a plan already landed or abandoned, a migration finished, an implementation detail the code has since moved past
 3. drop what the code already answers on its own — restated file trees, signatures, config values, anything a reader would check in the source before believing the document
-4. merge what repeats within a file, and move anything sitting on the wrong side of the pair to its counterpart rather than restating it
+4. merge what repeats within a file, and move anything sitting on the wrong side of the pair to its counterpart rather than restating it; cut from a scoped file anything its parent already states
 5. shorten what survives: same meaning, fewer words, AGENTS directive and imperative, CONTEXT descriptive and explanatory
 6. hold AGENTS lean enough to stay in context: the commands an agent must run and the rules it must obey, nothing more
 7. hold CONTEXT to what explains the system as it stands, never to how it came to stand that way

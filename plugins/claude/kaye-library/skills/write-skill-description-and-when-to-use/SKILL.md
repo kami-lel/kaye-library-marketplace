@@ -3,7 +3,7 @@ name: write-skill-description-and-when-to-use
 description: Writes both a skill's `description` and `when_to_use` fields together, each per its own convention.
 when_to_use: When a user wants a skill's `description` and `when_to_use` written together, or asks for a skill's metadata generally without naming just one field.
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 # Meta Prompt

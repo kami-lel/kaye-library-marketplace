@@ -3,7 +3,7 @@ name: maintenance-before-compact
 description: Logs a session's durable changes before context compaction — recording them in `CHANGELOG.md` and syncing `AGENTS.md` and `CONTEXT.md` — identifying the change set once from the conversation, working diffs, and existing `[Unreleased]` entries.
 when_to_use: Trigger on "before compact", "context is about to compact", "save this session's progress", or "log the session's changes before the context fills".
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Style Guide Good Writing
@@ -21,8 +21,8 @@ Before context is compacted, capture this session's durable changes so nothing i
 #### Instructions
 - identify the session's changes once, from the conversation, working diffs, and existing `[Unreleased]` entries, then reuse that set below
 - [Maintain CHANGELOG](#maintain-changelog) → record those changes; the unreleased-only and deduplication rules come from that skill
-- [Maintain Repository AGENTS](#maintain-repository-agents) → update for any command, convention, or constraint the session moved
-- update `CONTEXT.md` directly for any architecture the session moved, per [Repository CONTEXT Writer](#repository-context-writer)
+- [Maintain Repository AGENTS](#maintain-repository-agents) → update for any command, convention, or constraint the session moved, in the layer nearest the changed files
+- update the `CONTEXT.md` nearest the changed files directly for any architecture the session moved, per [Repository CONTEXT Writer](#repository-context-writer)
 - skip a step the session gives nothing relevant to
 #### Output
 Update the affected files in place, leaving unrelated files untouched.

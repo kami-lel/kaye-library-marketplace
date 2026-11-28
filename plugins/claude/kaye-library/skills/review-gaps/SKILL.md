@@ -3,7 +3,7 @@ name: review-gaps
 description: Audits whole repository for gaps, drift, unfinished seams — anything that becomes user-visible bug on public release; marks every surviving gap with a Loud TT.
 when_to_use: 'Pre-release audit requests: "gap review," "ready to ship?," "what''s missing," "review project state." Not single-diff or single-file review.'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Triage Tags
@@ -29,7 +29,7 @@ Sort on two keys, tier before meaning.
 - each tier forms one contiguous block, nothing interleaved
 - within a tier, each meaning forms its own run — every Loud bug adjacent, then every Loud fixme, on down
 ## Gap Review
-Inspect the repository and surface every inconsistency, gap, or unfinished seam likely to become user-visible after a public release. Read docs (`README`, `CHANGELOG`, `CONTEXT`, `AGENTS`, `docs/`) as the *claimed* contract, then code, tests, and packaging metadata as the *actual* one — every divergence is a candidate finding. Apply [Coder](#coder) when reading code, so findings rest on project convention rather than generic expectation.
+Inspect the repository and surface every inconsistency, gap, or unfinished seam likely to become user-visible after a public release. Read docs (`README`, `CHANGELOG`, `CONTEXT`, `AGENTS`, each scoped `AGENTS`/`CONTEXT` layer, `docs/`) as the *claimed* contract, flagging a scoped file that contradicts its parent, then code, tests, and packaging metadata as the *actual* one — every divergence is a candidate finding. Apply [Coder](#coder) when reading code, so findings rest on project convention rather than generic expectation.
 Read-only, with one exception: inserting a *Loud TT* at every newly found gap. Never fix a finding unless asked in a later turn.
 - report only what the repository shows, never inferring from filename or convention
 - uncited is not a finding. An absent thing cites the place that should hold it — the manifest, the entry point, the module that imports it

@@ -3,7 +3,7 @@ name: style-markdown-list
 description: 'Formats Markdown lists and table cells: dash bullets, items in Commentary Case, optional Title Case colon labels with key words bolded, numbering only for intrinsic order, nesting for composite items, shorthand symbols for boolean and n/a cells'
 when_to_use: 'Any bullet list, term/definition pair, key-value label, or table in a reply or Markdown file: "make this a list", "bullet these", "label each item", "add a table". Not for prose paragraphs'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ### List Format

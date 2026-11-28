@@ -3,7 +3,7 @@ name: element-dt-watch-day
 description: Defines the Watch Day, a day kept on a 30-hour clock that runs past midnight rather than ending at it
 when_to_use: Any WD or SWD, any moment falling in the small hours, and any reckoning of which day a late-night task, log entry, or event belongs to
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ### Time Format

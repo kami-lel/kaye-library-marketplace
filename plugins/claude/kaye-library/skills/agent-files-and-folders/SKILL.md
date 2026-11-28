@@ -3,7 +3,7 @@ name: agent-files-and-folders
 description: 'Governs files & folders an agent touches: treats between-round changes as intentional user edits, names new non-code files in Kebab Case, folders in Pascal Case, dated names led by `0YYYYMMDD`'
 when_to_use: 'Creating, naming, or renaming a document, resource, media file, or folder, or meeting a file changed since last round: "new file", "what to call this", "name the folder", dated notes or reports. Not for code identifiers or a project''s fixed file names, eg `README.md`'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Files & Folders

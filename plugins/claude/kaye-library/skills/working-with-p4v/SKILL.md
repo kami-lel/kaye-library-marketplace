@@ -3,7 +3,7 @@ name: working-with-p4v
 description: Pairs every Perforce term with its closest Git equivalent in parentheses, so a user who thinks in Git never translates alone.
 when_to_use: 'Trigger on any explanation or action in Perforce, P4, or P4V: changelists, shelves, streams, depots, submit, sync, integrate, resolve. Not for Git repositories (use `working-with-git`).'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 ---
 
 ## Working with Perforce

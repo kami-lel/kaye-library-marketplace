@@ -3,7 +3,7 @@ name: repo-agents-writer
 description: 'Writes & maintains repository `AGENTS.md` & personal `AGENTS.local.md`: **prescriptive** rules telling AI coding agents how to work in repo, e.g. commands, code style, PR rules, safety constraints'
 when_to_use: 'Creating, updating, reviewing `AGENTS.md`, `AGENTS.local.md`, `CLAUDE.md`, similar agent-instruction files. Triggers: "write an AGENTS.md", "add agent instructions", "agent rules/conventions". Not for **descriptive** architecture/domain knowledge, which belongs in `CONTEXT.md`'
 metadata:
-  version: 1.6.0
+  version: 1.6.1
 paths:
 - '**/{AGENTS,Agents,agents}{,.local,.override}{,.md}'
 ---
@@ -11,7 +11,7 @@ paths:
 ## agents writer
 Apply these rules to `AGENTS.md`, formatting it per [Style Guide Markdown Format](#style-guide-markdown-format).
 Suggested Sections go under clear `##` headings: use what fits, omit rather than pad, and add any section carrying a project-specific behavioral rule. Keep content to rules and constraints an agent acts on. Each writer below lists its own.
-The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises.
+The root `AGENTS.md` links every file under `docs/`, per [Reference Link Format](#reference-link-format), each phrased to send an agent there when its topic arises. It also links each scoped `AGENTS.md` and `CONTEXT.md`, phrased "when working in `Frontend/`, read `Frontend/AGENTS.md`".
 #### AGENTS Title & Preface
 ```markdown
 # Example Project AGENTS
@@ -27,10 +27,7 @@ Prescriptive rules for agents working in this project.
 - Local Layer: put machine-specific or personal rules in `AGENTS.local.md`; create it if missing, never commit it
 ```
 Replace `Example Project` with the real project name. Copy the preface exactly, word for word.
-The personal layer's title line, marked as local:
-```markdown
-# Example Project local AGENTS
-```
+A scoped `AGENTS.md` or a local `AGENTS.local.md` follows the same format, standard, and style, per [Project Context Engineering](#project-context-engineering).
 ### Repository AGENTS Writer
 ##### Suggested Sections
 Keep content command-oriented; descriptive architecture and domain knowledge belong in `CONTEXT.md`.
